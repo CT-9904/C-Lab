@@ -75,7 +75,7 @@ else
 Programmcode:
 <details>
  
-    ´´´c
+    ```c
     #include <stdio.h>
     #include <stdlib.h>
 
@@ -99,7 +99,7 @@ Programmcode:
       return 0;
     }
     
-    ´´´  
+    ``` 
 </details>
 
   
