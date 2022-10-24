@@ -72,12 +72,11 @@ else
 
 ### Beispiel einer einfachen if-else-Struktur
 
-Programmcode:
 <details>
- 
-    ```c
-    int main()
-    {
+<summary>Programmcode</summary>
+```c
+int main() 
+{
       int Antwort = 0;
 
       printf("Was ist 1 + 1?\n");
@@ -94,9 +93,8 @@ Programmcode:
       }
 
       return 0;
-    }
-    
-    ``` 
+}
+``` 
 </details>
 
   
