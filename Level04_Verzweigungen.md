@@ -69,10 +69,39 @@ else
 
 </details>
 
+
+###Beispiel einer einfachen if-else-Struktur
 <details>
-  <summary>Beispiel einer einfachen if-else-Struktur</summary>
+  <details>
+    <summary>Programm-Code</summary>
+    
+    ´´´c
+    #include <stdio.h>
+#include <stdlib.h>
 
+int main()
+{
+    int Antwort = 0;
 
+    printf("Was ist 1 + 1?\n");
+    printf("Antwort: ");
+    scanf("%d", &Antwort);
+
+    if (Antwort == 2)
+    {
+        printf("Die eingegebene Antwort ist richtig!");
+    }
+    else
+    {
+        printf("Die eingegebene Antwort ist falsch.");
+    }
+
+    return 0;
+}
+    
+    ´´´
+    
+  </details>
   
 </details>
 
