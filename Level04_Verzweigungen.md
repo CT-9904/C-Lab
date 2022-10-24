@@ -23,12 +23,16 @@ Aufbau des if-Blocks:
 
 Der if-Block besteht aus drei Komponenten: dem Schlüsselwort if, einem runden Klammernpaar für, eine oder mehrere, Bedingungen und einem Anweisungsblock.
 <details>
+  
+```c
 if (Bedingungen)
 {
 
   Anweisungen
   
 }
+```
+
 </details>
 
 Aufbau des else if-Blocks:
