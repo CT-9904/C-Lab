@@ -40,12 +40,16 @@ Aufbau des else if-Blocks:
 Der einzige Unterschied, zwischen dem if-Block und dem else if-Block, ist das Schlüsselwort vor den runden Klammern für die Bedingungen. Ansonsten ist ihr Aufbau
 identisch.
 <details>
+  
+```c
 else if (Bedingungen)
 {
 
   Anweisungen
   
 }
+```  
+
 </details>
 
 Aufbau des else-Block:
@@ -53,12 +57,16 @@ Aufbau des else-Block:
 Der else-Block besteht nur aus dem Schlüsselwort und dem Anweisungsblock. Der else-Block steht immer ganz am Ende und deckt alle Fälle ab, die keine konkrete
 Bedingungen haben müssen.
 <details>
+
+```c
 else
 {
   
   Anweisungen
   
 }
+```
+
 </details>
 
 ## Die switch-case-Verzweigung
@@ -83,6 +91,8 @@ Der Aufbau des switch-Blocks ähnelt sehr dem eines if-Blocks. Er besteht aus ei
 Das Schlüsselwort, dass die Verzweigung einleitet, lautet switch. In dem runden Klammernpaar stehen hier nicht Bedingungen, sondern ein Ausdruck der mit den
 verschiedenen Fällen verglichen wird. Der Anweisungsblock enthält keine Anweisungen die ausgeführt werden sollen, sondern die case-Blöcke und den default-Block.
 <details>
+  
+```c
 switch (Ausdruck)
 {
  
@@ -100,6 +110,8 @@ switch (Ausdruck)
   
   
 }
+```
+
 </details>
 
 Aufbau des case-Blocks:
@@ -109,7 +121,11 @@ Die Syntax gibt vor, das hinter dem Wert ein Doppelpunkt (:) stehen muss. Auf de
 eintreffen des Falles, ausgeführt werden sollen.
 
 <details>
+  
+  ```c
   case Konst. : {Anweisungen}
+  ```
+  
 </details>
 
 Im Anweisungsblock jedes case-Blocks muss nach der letzten Anweisung der Befehl break stehen. Dieser Befehl sorgt dafür, dass die Verzweigung, ab diesem Punkt,
@@ -127,6 +143,10 @@ Der default-Block wird mit dem Schlüsselwort eingeleitet. Wie auch der else-Blo
 aus dem switch-Block verglichen werden kann. Auf das Schlüsselwort der Doppelpunkt. Dahinter kommt der Anweisungsblock.
 
 <details>
+  
+  ```c
   default: {Anweisungen}
+  ```
+  
 </details>
  
