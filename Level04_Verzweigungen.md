@@ -72,8 +72,13 @@ else
 
 ### Beispiel einer einfachen if-else-Struktur
 
+<details>
+  <summary>Programmcode</summary>
+</details>
 
-
+<details>
+  <summary>Beschreibung</summary>
+</details>
   
 ## Die switch-case-Verzweigung
 
