@@ -69,6 +69,13 @@ else
 
 </details>
 
+<details>
+  <summary>Beispiel einer einfachen if-else-Struktur</summary>
+
+
+  
+</details>
+
 ## Die switch-case-Verzweigung
 
 Will man Fallunterscheidungen durchführen sind switch-case-Anweisungen die geeignetere Wahl, als die if-else-Verzweigungen. Eine switch-case-Verzweigung besteht
