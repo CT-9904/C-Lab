@@ -99,7 +99,12 @@ else
 </details>
 
 <details>
-  <summary>Beschreibung</summary>
+<summary>Beschreibung</summary>
+
+An diesem einfachen Beispiel sieht man den grundlegenden Ablauf einer if-else-Verzweigung. Im Beispiel wird vom User erfragt, was die Antwort auf die Rechenaufgabe
+1 + 1 ist. Gibt der User die richtige Antwort (in diesem Fall eine 2) ein, so erhält er die vom Programm die Bestätigung, dass siene Antwort richtig ist. Bei einer falschen Antwort, wird man darauf hingewiesen, das die Eingabe falsch war.
+  
+
   
 </details>
 
