@@ -72,7 +72,31 @@ else
 
 ### Beispiel einer einfachen if-else-Struktur
 
+<details>
+<summary>Programmcode</summary>
+```c
+int main() 
+{
+      int Antwort = 0;
 
+      printf("Was ist 1 + 1?\n");
+      printf("Antwort: ");
+      scanf("%d", &Antwort);
+
+      if (Antwort == 2)
+      {
+          printf("Die eingegebene Antwort ist richtig!");
+      }
+      else
+      {
+          printf("Die eingegebene Antwort ist falsch.");
+      }
+
+      return 0;
+}
+  
+``` 
+</details>
 
   
 ## Die switch-case-Verzweigung
