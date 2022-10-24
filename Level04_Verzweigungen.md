@@ -103,9 +103,8 @@ else
 
 An diesem einfachen Beispiel sieht man den grundlegenden Ablauf einer if-else-Verzweigung. Im Beispiel wird vom User erfragt, was die Antwort auf die Rechenaufgabe
 1 + 1 ist. Gibt der User die richtige Antwort (in diesem Fall eine 2) ein, so erhält er die vom Programm die Bestätigung, dass siene Antwort richtig ist. Bei einer falschen Antwort, wird man darauf hingewiesen, das die Eingabe falsch war.
-  
-
-  
+ 
+Das Beispiel macht auch deutlich, dass solche Strukturen einer binären Logik folgen. Lässt man den else-Block nämlich weg, wird das Programm zwar auch korrekt ausgeführt. Allerdings bekommt der User nur eine Rückmeldung, wenn er die richtige Antwort eingegeben hat. Bei einer Eingabe die falsch ist, erhält er keine Auskunft darüber, ob seine Antwort stimmt oder nicht. 
 </details>
 
   
