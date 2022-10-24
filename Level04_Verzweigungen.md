@@ -74,6 +74,25 @@ else
 
 <details>
   <summary>Programmcode</summary>
+  
+  ```c
+  int main(){
+  int Antwort =0 ;
+  
+  printf("Was ist 1 + 1?\n");
+  printf("Antwort: ");
+  scanf("%d", &Antwort);
+  
+  if(Antwort == 2){
+  printf("Die eingebene Antwort ist richtig!");
+  }
+  else{
+  printf("Die eingebene Antwort ist falsch.");
+  }
+  
+  return 0;
+  }
+  ```
 </details>
 
 <details>
