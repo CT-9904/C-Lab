@@ -70,11 +70,11 @@ else
 </details>
 
 
-###Beispiel einer einfachen if-else-Struktur
+### Beispiel einer einfachen if-else-Struktur
+
+Programmcode:
 <details>
-  <details>
-    <summary>Programm-Code</summary>
-    
+ 
     ´´´c
     #include <stdio.h>
     #include <stdlib.h>
@@ -99,12 +99,10 @@ else
       return 0;
     }
     
-    ´´´
-    
-  </details>
-  
+    ´´´  
 </details>
 
+  
 ## Die switch-case-Verzweigung
 
 Will man Fallunterscheidungen durchführen sind switch-case-Anweisungen die geeignetere Wahl, als die if-else-Verzweigungen. Eine switch-case-Verzweigung besteht
