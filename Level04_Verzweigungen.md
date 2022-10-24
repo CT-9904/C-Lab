@@ -77,27 +77,27 @@ else
     
     ´´´c
     #include <stdio.h>
-#include <stdlib.h>
+    #include <stdlib.h>
 
-int main()
-{
-    int Antwort = 0;
-
-    printf("Was ist 1 + 1?\n");
-    printf("Antwort: ");
-    scanf("%d", &Antwort);
-
-    if (Antwort == 2)
+    int main()
     {
-        printf("Die eingegebene Antwort ist richtig!");
-    }
-    else
-    {
-        printf("Die eingegebene Antwort ist falsch.");
-    }
+      int Antwort = 0;
 
-    return 0;
-}
+      printf("Was ist 1 + 1?\n");
+      printf("Antwort: ");
+      scanf("%d", &Antwort);
+
+      if (Antwort == 2)
+      {
+          printf("Die eingegebene Antwort ist richtig!");
+      }
+      else
+      {
+          printf("Die eingegebene Antwort ist falsch.");
+      }
+
+      return 0;
+    }
     
     ´´´
     
