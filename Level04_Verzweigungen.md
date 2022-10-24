@@ -100,7 +100,9 @@ else
 
 <details>
   <summary>Beschreibung</summary>
+  
 </details>
+
   
 ## Die switch-case-Verzweigung
 
