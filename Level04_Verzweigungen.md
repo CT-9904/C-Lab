@@ -76,6 +76,9 @@ else
   <summary>Programmcode</summary>
   
   ```c
+  #include <stdio.h>
+  #include <stdlib.h>
+  
   int main(){
   int Antwort =0 ;
   
