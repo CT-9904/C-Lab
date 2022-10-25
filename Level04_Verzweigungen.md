@@ -147,7 +147,7 @@ int main()
 
 Wie man in diesem Beispiel sieht, eignen sich if-else if-else-Verzweigungen gut, um Werte miteinander zu vergleichen.
 
-In diesem Beispiel wurden, in jedem Block, mehrere Bedingungen gestellt. Im Fall des if-Blocks luaten diese, dass der Wert1 größer als Wert2 und Wert3 sein muss, damit dieser ausgeführt wird.
+In diesem Beispiel wurden, in jedem Block, mehrere Bedingungen gestellt. Im Fall des if-Blocks lauten diese, dass der Wert1 größer als Wert2 und Wert3 sein muss, damit dieser ausgeführt wird.
 
 Verknüpft man mehrer Teilbedingungen miteinander, zu einer Gesamtbedingung, so ist es ratsam diese in Klammern zu setzen. Das macht den Code, zum Einen, leserlicher und, zum Anderen, für andere Programmierer verständlicher.
 
