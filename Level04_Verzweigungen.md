@@ -173,7 +173,7 @@ in der Verzeigung vorkommen und muss zwingend nach dem letzten case-Block stehen
   Für Fallunterscheidungen sollte man die switch-case-Verzweigung vorziehen. Will man Werte miteinander vergleichen ist die if-else-Verzweigung die geeignetere Wahl.
 </details>
 
-### Aufbau der einzelnen Bl�cke
+### Aufbau der einzelnen Blöcke
 
 Aufbau des switch-Blocks:
 
