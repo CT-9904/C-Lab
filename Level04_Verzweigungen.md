@@ -194,7 +194,6 @@ switch (Ausdruck)
   
  default
   
-  
 }
 ```
 
