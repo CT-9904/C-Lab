@@ -76,5 +76,6 @@ printf ist in der Headerdatei stdio.h deklariert.
 |   	\b		| Backspace, ein Zeichen zurückgehen |
 |   	\'		| Ausgabe vom Zeichen: '	   |
 |   	\"		| Ausgabe vom Zeichen: "	   |
+|   	\?		| Ausgabe vom Zeichen: ?	   |
 
 </details>
