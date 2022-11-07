@@ -108,7 +108,7 @@ Will man bei einem bestimmten Ereignis, eine entsprechende Reaktion des Programm
 
 </details>
 
-### Beispiel einer if-else if-else-Struktur
+### 1. Beispiel einer if-else if-else-Struktur
 
 <details>
 <summary>Programmcode</summary>
@@ -152,6 +152,66 @@ In diesem Beispiel wurden, in jedem Block, mehrere Bedingungen gestellt. Im Fall
 Verknüpft man mehrer Teilbedingungen miteinander, zu einer Gesamtbedingung, so ist es ratsam diese in Klammern zu setzen. Das macht den Code, zum Einen, leserlicher und, zum Anderen, für andere Programmierer verständlicher.
 
 Bei der Ausführung gilt, wurden die Bedingungen eines Blocks erfüllt, werden die Anweisungen darin ausgeführt. Wenn die Bedingungen eines Blocks als erfüllt gewertet sind, werden die anderen Blöcke nicht mehr berückrichtsichtigt. Ihre Bedingungen werden nicht mehr überprüft. Konkret auf das Beispiel bezogen heißt das, wurden beispielsweise die Bedingungen des if-Blocks als erfüllt gewertet, werden die beiden darauf folgenden else-if-Blöcke nicht mehr berücksichtigt.
+
+</details>
+
+### 2. Beispiel einer if-else if-else-Struktur
+
+<details>
+<summary>Programmcode</summary>
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    char Antwort;
+
+    printf("Welche Programmiersprache wird in diesem Kurs behandelt?\n");
+    printf("Antwort A: C\t\t");
+    printf("Antwort B: Java\n");
+    printf("Antwort C: Python\t");
+    printf("Antwort D: Swift\n");
+
+    printf("\n");
+    printf("Geben Sie A, B, C oder D ein.\n");
+    printf("Ihre Antwort: ");
+    scanf("%c", &Antwort);
+
+    if ((Antwort == 'a') || (Antwort == 'A'))
+    {
+        printf("Ihre Antwort ist richtig!\n");
+    }
+    else if ((Antwort == 'b') || (Antwort == 'B'))
+    {
+        printf("Ihre Antwort ist falsch!\n");
+    }
+    else if ((Antwort == 'c') || (Antwort == 'C'))
+    {
+        printf("Ihre Antwort ist falsch!\n");
+    }
+    else if ((Antwort == 'd') || (Antwort == 'D'))
+    {
+        printf("Ihre Antwort ist falsch!\n");
+    }
+    else
+    {
+        printf("Ihre Eingabe ist ungueltig.");
+
+        return 1;
+    }
+
+    return 0;
+}
+```
+
+</details>
+
+<details>
+<summary>Beschreibung</summary>
+
+Mit solchen Verzweigungen lassen sich auch Umfragen/ Quizspiele (kurz: jegliche Form von Fallunterscheidungen) realisieren. Genau wie beim 1. Beispiel handelt es sich hier um eine Verzweigung mit einem if- und else-Block, sowie mehreren else if-Blöcken. Häufen sich mehrere else if-Blöcke hintereinander, kann der Code unleserlich werden. In Fällen, wie im gezeigten Beispiel, ist es daher besser statt einer if-else if-else-Verzweigung eine switch-case-Verzweigung zu nutzen.
 
 </details>
 
