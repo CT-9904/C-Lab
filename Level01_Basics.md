@@ -68,6 +68,12 @@ printf ist in der Headerdatei stdio.h deklariert.
 | Steuerzeichen | Bedeutung |
 |---------------|------------------------------|
 |		\0		| Null, Endzeichen für Strings |
-|   	|   	|
-|   	|   	|
+|		\n		| Line Feed, neue Zeile		   |
+|   	\f		| Form Feed, neue Seite		   |
+|   	\t		| Horizontal Tab			   |
+|   	\v		| Vertical Tab				   |
+|   	\a		| Alert, Ton				   |
+|   	\b		| Backspace, ein Zeichen zurückgehen |
+|   	\'		| Ausgabe vom Zeichen: '	   |
+
 </details>
