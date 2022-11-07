@@ -74,8 +74,32 @@ printf ist in der Headerdatei stdio.h deklariert.
 |   	\v		| Vertical Tab				   |
 |   	\a		| Alert, Ton				   |
 |   	\b		| Backspace, ein Zeichen zurückgehen |
-|   	\'		| Ausgabe vom Zeichen: '	   |
-|   	\"		| Ausgabe vom Zeichen: "	   |
-|   	\?		| Ausgabe vom Zeichen: ?	   |
+|   	\\'		| Ausgabe vom Zeichen: '	   |
+|   	\\"		| Ausgabe vom Zeichen: "	   |
+|   	\\?		| Ausgabe vom Zeichen: ?	   |
+|   	\\\		| Ausgabe vom Zeichen: \	   |
+|   	\o		| Zeichen für oktalen Code (o = Oktalziffer) |
+|   	\xh		| Zeichen für hex-Code (h = Hex-Ziffer) |
+
+</details>
+
+<details>
+<summary>Wichtige Formatzeichen</summary>
+
+| Formatzeichen | Bedeutung |
+|---------------|------------------------------|
+|		%%		| Ausgabe von Zeichen		   |
+|		%c		| Zeichen für char			   |
+|   	%d		| Zeichen für Ganzzahlen (short, int) |
+|   	%ld		| Zeichen für lange Ganzzahlen (long) |
+|   	%e		| Gleitkommazahl (float, double) in wiss. Notation |
+|   	%E		| Gleitkommazahl (float, double) in wiss. Notation |
+|   	%f		| Gleitkommazahl (float) in Dezimal-Schreibweise |
+|   	%lf		| Gleitkommazahl (double) in Dezimal-Schreibweise |
+|   	%u		| Zeichen für unsigned-Datentypen |
+|   	%s		| Zeichen für String	   	   |
+|   	%x		| Zeichen für eine Hex-Zahl (short, int) |
+|   	%o		| Zeichen für eine Oktalzahl (short, int) |
+|   	%p		| Zeichen für eine Zeiger-Adresse (*Pointer) |
 
 </details>
