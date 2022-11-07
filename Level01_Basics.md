@@ -103,3 +103,30 @@ printf ist in der Headerdatei stdio.h deklariert.
 |   	%p		| Zeichen für eine Zeiger-Adresse (*Pointer) |
 
 </details>
+
+## Aufbau von printf
+
+```c
+printf("Hallo Welt\n");
+```
+
+printf ist eine Funktion, die aus mehreren Teilen besteht. Im Verlauf der Zusammenfassung wird auf alle Teile eingegangen. Zum jetzigen Zeitpunkt reicht es zu wissen, dass der Text der, über die Standardausgabe, ausgegeben werden soll zwischen zwei Anführungszeichen (") steht.
+
+Die obige Codezeile steigt eine aufgerufene printf-Anweisung. printf ist der Funktionsaufruf. Das was in den runden Klammern und zwischen den Anführungszeichen steht, ist der Formatstring, der an die Funktion übergeben wird. Auch das Steuerzeichen \n wird an die Funktion übergeben.
+
+<details>
+<summary>Beispiel</summary>
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    printf("Hallo Welt\n");
+    
+    return 0;
+}
+```
+
+</details>
