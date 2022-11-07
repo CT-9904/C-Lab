@@ -74,6 +74,6 @@ printf ist in der Headerdatei stdio.h deklariert.
 |   	\v		| Vertical Tab				   |
 |   	\a		| Alert, Ton				   |
 |   	\b		| Backspace, ein Zeichen zurückgehen |
-|   	\'		| Ausgabe vom Zeichen: '	   |
+|   	\\'		| Ausgabe vom Zeichen: '	   |
 
 </details>
