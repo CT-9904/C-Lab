@@ -17,7 +17,7 @@ int main()
 <details>
 <summary>stdio.h</summary>
 
-Die Headerdatei stdio.h enthält alle Standardfunktionen für die Standard-Ein- und Ausgabe. DieseHeaderdatei muss zwingend erhalten sein!
+Die Headerdatei stdio.h enthält alle Standardfunktionen für die Standard-Ein- und Ausgabe. Diese Headerdatei muss zwingend erhalten sein!
 
 stdio steht für "Standard Input Output".
 </details>
@@ -41,7 +41,7 @@ Auf die Bedeutung von int wird später eingegangen.
 <details>
 <summary>return</summary>
 
-Die return-Anweisung beendet die Funktion.Steht am Ende der main-Funktion "return 0;" so bedeutet das, dass das Programm ohne Fehler beendet wird.
+Die return-Anweisung beendet die Funktion. Steht am Ende der main-Funktion "return 0;" so bedeutet das, dass das Programm ohne Fehler beendet wird.
 </details>
 
 ## Die Bedeutung der geschweiften Klammern
@@ -61,3 +61,13 @@ Regel Nr. 2: Jede Anweisung muss mit einem Semikolon abgeschlossen werden.
 printf steht für "print formatted". Sie ist eine der häufig genutzen Funktionen in C. Sie gibt formattierten Text über die Standardausgabe aus. Der Text, der in die Funktion eingegeben wird, kann aus Klarschrift, Steuerzeichen und Formatzeichen bestehen.
 
 printf ist in der Headerdatei stdio.h deklariert.
+
+<details>
+<summary>Wichtige Steuerzeichen</summary>
+
+| Steuerzeichen | Bedeutung |
+|---------------|------------------------------|
+|		\0		| Null, Endzeichen für Strings |
+|   	|   	|
+|   	|   	|
+</details>
