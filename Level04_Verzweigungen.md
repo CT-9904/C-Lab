@@ -294,3 +294,76 @@ aus dem switch-Block verglichen werden kann. Auf das Schlüsselwort der Doppelpu
   ```
   
 </details>
+
+### Beispiel einer switch-case-Verzweigung
+
+<details>
+<summary>Programmcode</summary>
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    char Antwort;
+
+    printf("Welche Programmiersprache wird in diesem Kurs behandelt?\n");
+    printf("Antwort A: C\t\t");
+    printf("Antwort B: Java\n");
+    printf("Antwort C: Python\t");
+    printf("Antwort D: Swift\n");
+
+    printf("\n");
+    printf("Geben Sie A, B, C oder D ein.\n");
+    printf("Ihre Antwort: ");
+    scanf("%c", &Antwort);
+
+    switch (Antwort)
+    {
+    case 'a':
+    case 'A':
+    {
+        printf("Ihre Antwort ist richtig!\n");
+        break;
+    }
+    case 'b':
+    case 'B':
+    {
+        printf("Ihre Antwort ist falsch!\n");
+        break;
+    }
+    case 'c':
+    case 'C':
+    {
+        printf("Ihre Antwort ist falsch!\n");
+        break;
+    }
+    case 'd':
+    case 'D':
+    {
+        printf("Ihre Antwort ist falsch!\n");
+        break;
+    }
+    default:
+    {
+        printf("Ihre Eingabe ist ungueltig.");
+
+        return 1;
+    }
+    }
+
+    return 0;
+}
+```
+
+</details>
+
+<details>
+<summary>Beschreibung</summary>
+
+In diesem Beispiel wurde nochmal die Quizfrage aufgegriffen. Nur wurde dieses Mal eine switch-case-Verzweigung verwendet. Das Programm verhält sich identisch zu dem, wo die if-else if-else-Verzweigung verwendet wurde. Auch sieht man an dem Beispiel gut, dass man das bewusste Weglassen des break-Befehls zum Vorteil nutzen kann.
+
+In den Fällen, wo ein kleiner Buchstabe eingegeben wird, wurden keine Anweisungen hinterlegt. Deshalb werden bei der Eingabe von kleinen Buchstaben die drauffolgenden Blöcke ausgeführt, wo die break-Befehle hinterlegt sind.
+
+</details>
