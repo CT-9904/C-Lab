@@ -165,9 +165,9 @@ Schlüsselwörter sind Bezeichner die von C reserviert sind.
 | volatile |
 | while |
 
-## Namenskonvention - Bennung von Variablen
+## Namenskonvention - Benennung von Variablen
 
-Programmier haben Vorschriften bzw. Empfehlungen zur Bennung von Variablen, Funktionen etc. entwickelt. Diese dienen dazu um Programmtexte verständlicher zu gestalten und somit die Möglichkeit der Wartung (Änderbarkeit) der Software zu verbessern. Programmierer sind somit in der Lage Quellcodes anderer Programmier besser nachzuvollziehen. Beim benennen von Variablen wird die Pascal-Notation angewendet. Das bedeutet, dass der erste Buchstabe des Variablennamens groß geschrieben wird und die folgenden Buchstaben klein.
+Programmier haben Vorschriften bzw. Empfehlungen zur Benennung von Variablen, Funktionen etc. entwickelt. Diese dienen dazu um Programmtexte verständlicher zu gestalten und somit die Möglichkeit der Wartung (Änderbarkeit) der Software zu verbessern. Programmierer sind somit in der Lage Quellcodes anderer Programmier besser nachzuvollziehen. Beim benennen von Variablen wird die Pascal-Notation angewendet. Das bedeutet, dass der erste Buchstabe des Variablennamens groß geschrieben wird und die folgenden Buchstaben klein.
 
 Beispiel:
 
