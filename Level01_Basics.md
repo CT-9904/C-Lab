@@ -158,3 +158,22 @@ Sie werden mit // eingeleitet.
 Kommentare kann man auch dazu nutzen, um Teile des Quellcodes auszukommentieren! Auskommentierte Programmteile werden nicht ausgeführt.
 
 </details>
+
+Beispiel:
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    /*
+    Das hier ist ein mehrzeiliger Kommentar.
+    */
+
+    printf("Kommentare sind ein nuetzliches Tool!\n");
+    // Das hier ist ein einzeiliger Kommentar.
+    
+    return 0;
+}
+```
