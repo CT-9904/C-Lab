@@ -36,3 +36,62 @@ int main()
 ```
 
 </details>
+
+## Die arithmetischen Operatoren
+
+Die arithmetischen Operatoren sind aus der Mathematik bekannt.Es handelt sich um Plus (+), Minus (-), Mal (*), Geteilt (/) und Modulo (%).
+
+Mit Ausnahme des Modulo-Operators, dürfen die arithmetischen Operatoren sowohl bei Ganzzahligen als auch bei Gleitkommatypen benutzt werden. Modulo hingegen darf nur bei ganzzahligen Typen verwendet werden.
+
+Wie  auch in Mathe gilt die Punkt-vor-Strich-Regel, wenn man mehrere Operatoren gleichzeitig verwendet. Will man dies vermeiden, sollte man Klammern (()) verwenden. Der Klammer-Operator ist der Operator mit der höchsten Priorität.
+
+<details>
+<summary>Bedeutung von Modulo</summary>
+
+Mit dem Modulo-Operator wird eine Division durchgeführt. Allerdings wird nicht das exakte Ergebnis ausgegeben, sondern der Rest der beim Dividieren entsteht.
+
+Bei 12 % 2 ist das Ergebnis 0, da bei der Division kein Rest entsteht.
+
+Bei 13 % 2 ist das Ergebnis 1.
+
+</details>
+
+<details>
+<summary>Beispiel</summary>
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int Zahl1 = 64;
+    int Zahl2 = 8;
+
+    int Ergebnis;
+
+    //Addition - Anwendung vom Plus-Operator
+    Ergebnis = Zahl1 + Zahl2;
+    printf("%d + %d = %d\n", Zahl1, Zahl2, Ergebnis);
+
+    //Subtraktion - Anwendung vom Minus-Operator
+    Ergebnis = Zahl1 - Zahl2;
+    printf("%d - %d = %d\n", Zahl1, Zahl2, Ergebnis);
+
+    //Multiplikation - Anwendung vom Mal-Operator
+    Ergebnis = Zahl1 * Zahl2;
+    printf("%d * %d = %d\n", Zahl1, Zahl2, Ergebnis);
+
+    //Division - Anwendung vom Geteilt-Operator
+    Ergebnis = Zahl1 / Zahl2;
+    printf("%d / %d = %d\n", Zahl1, Zahl2, Ergebnis);
+
+    //Modulodivision - Anwendung vom Modulo-Operator
+    Ergebnis = Zahl1 % Zahl2;
+    printf("%d %% %d = %d\n", Zahl1, Zahl2, Ergebnis);
+
+    return 0;
+}
+```
+
+</details>
