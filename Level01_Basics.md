@@ -130,3 +130,31 @@ int main()
 ```
 
 </details>
+
+## Kommentare
+
+Kommentare dienen dazu ein Programm, für Programmierer, verständlicher zu schreiben. Sie sind ausschließlich für den Menschen da und werden im Maschinencode nicht eingebunden. Beim kompelieren eines Codes entfernt der Compiler jegliche Kommentare, sodass sie im Maschinencode nicht mehr vorhanden sind. Es gibt zwei Arten von Kommentaren: Einzeilige und Mehrzeilige.
+
+<details>
+<summary>Mehrzeilige Kommentare</summary>
+
+Diese Art von Kommentaren eignet sich gut, wenn man längere Beschreibungen in den Quellcode schreiben möchte.
+
+Sie werden mit /* eingeleitet und mit */ beendet.
+
+</details>
+
+<details>
+<summary>Einzeilige Kommentare</summary>
+Diese Art von Kommentaren ist dafür da, um einzelne Zeilen zu kommentieren.
+
+Sie werden mit // eingeleitet.
+
+</details>
+
+<details>
+<summary>Hinweis</summary>
+
+Kommentare kann man auch dazu nutzen, um Teile des Quellcodes auszukommentieren! Auskommentierte Programmteile werden nicht ausgeführt.
+
+</details>
