@@ -64,7 +64,7 @@ Die Daten aus den folgenden Tabellen gelten für ein 32-Bit-Sytem!
 | char | 32 Bit / 4 Byte | 1,2 * 10<sup>-38</sup> bis 3,4 * 10<sup>38</sup> | 6 Nachkommastellen |
 | short | 64 Bit / 8 Byte | 2,3 * 10<sup>-308</sup> bis 1,7 * 10<sup>308</sup> | 15 Nachkommastellen |
 
-## Variablen
+# Variablen
 
 Variablen sind, einfach ausgedrückt, eigens gewählte Namen für die Speicheradressen (im Arbeitsspeicher) mit denen ein Computer arbeitet. Speicheradressen sind mit hexadezimalen Zahlen codiert. Um einen Quellcode lseserlicher zu gestalten (und wir Menschen mit hexadezimalen Zahlen wenig Anfangen können) benutzt man Variablen. Variablen besitzen vier Eigenschaften:
 
