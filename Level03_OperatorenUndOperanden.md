@@ -95,3 +95,124 @@ int main()
 ```
 
 </details>
+
+## Inkrementieren und Dekrementieren
+
+Wenn man einen Wert um eins erhöhen oder verringern möchte, bietet sich eine Inkrementierung (Erhöhung um eins) bzw.eine Dekrementierung (Verringerung um eins) an. Sowohl der Inkrement-Operator (++) als auch der Dekrement-Operator (--) können sowohl vor, als auch naach einer Variable stehen. Man spricht dann Postfix bzw. Präfix.
+
+Bedeutung Inkrement-Operator:
+
+```c
+Variable++;
+// hat die gleiche Bedeutung wie:
+Variable = Variable + 1; 
+```
+
+Bedeutung Dekrement-Operator:
+
+```c
+Variable--;
+// hat die gleiche Bedeutung wie:
+Variable = Variable - 1;
+```
+
+<details>
+<summary>Bedeutung Postfix</summary>
+
+Bei der Postfix-Schreibweise wird die Variable nach ihrer Verwendung inkrementiert bzw. dekrementiert.
+
+Schreibweise: Variable++ bzw. Variable--
+
+</details>
+
+<details>
+<summary>Bedeutung Präfix</summary>
+
+Bei der Präfix-Schreibweise wird die Variable vor ihrer Verwendung inkrementiert bzw. dekrementiert.
+
+Schreibweise: ++Variable bzw. --Variable
+
+</details>
+
+<details>
+<summary>Beispiel</summary>
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int ival = 1;
+
+    printf("ival : %d\n", ival);    // Variable = 1
+    ival++;                         // Variable = 1
+    printf("ival : %d\n", ival);    // Variable = 2
+    printf("ival : %d\n", ival++);  // Variable = 2
+    printf("ival : %d\n", ival);    // Variable = 3
+    printf("ival : %d\n", ++ival);  // Variable = 4
+
+    return 0;
+}
+```
+
+</details>
+
+## Vergleichsoperatoren
+
+Die Vergleichsoperatoren sollten ebenfalls aus der Mathematik bekannt vorkommen. Wie der Name schon aussag, dienen sie dazu Vergleiche durchzuführen. Es werden immer zwei Operanden miteinander verglichen zurückgegeben wird ein Wert des Typs int. Ist der Vergleich wahr, erhält man den Wert 1 (true)  zurück. Bei einem Vergleich der unwahr ist, erhält man den Wert 0 (false) zurück.
+
+In der folgenden Tabelle sind alle Vergleichsoperatoren und ihre Bedeutungen zusammengefasst.
+
+| Operator | Bedeutung | Beispiel | Rückgabewert |
+|----------|-----------|----------|--------------|
+| == | Gleich | x == y | 1, wenn x und y gleich sind / 0, wenn x und y ungleich sind |
+| != | Ungleich | x != y | 1, wenn x und y ungleich sind / 0, wenn x und y gleich sind |
+| < | Kleiner | x < y | 1, wenn x kleiner y ist. Ansonsten 0 |
+| > | Größer | x > y | 1, wenn x größer y. Ansonsten 0 |
+| <= | Kleiner gleich | x <= y | 1, wenn x kleiner oder gleich y ist. Ansonsten 0 |
+| >= | Größer gleich | x >= y | 1, wenn x größer oder gleich y. Ansonsten 0 |
+
+<details>
+<summary>Beispiel</summary>
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int x = 9;
+    int y = 5;
+
+    _Bool Vergleich;
+
+    // x ist gleich y
+    Vergleich = x == y;
+    printf("x == y -> %d\n", Vergleich);
+
+    // x ist ungleich y
+    Vergleich = x != y;
+    printf("x != y -> %d\n", Vergleich);
+
+    // x ist kleiner y
+    Vergleich = x < y;
+    printf("x < y -> %d\n", Vergleich);
+
+    // x ist größer y
+    Vergleich = x > y;
+    printf("x > y -> %d\n", Vergleich);
+
+    // x ist kleiner gleich y
+    Vergleich = x <= y;
+    printf("x <= y -> %d\n", Vergleich);
+
+    // x ist größer gleich y
+    Vergleich = x >= y;
+    printf("x >= y -> %d\n", Vergleich);
+
+    return 0;
+}
+```
+
+</details>
