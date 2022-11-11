@@ -410,7 +410,7 @@ scanf steht für "scan formatted" und bildet das Gegenstück zur Funktion printf
 
 Auch scanf ist in der Headerdatei stdio.h deklariert.
 
--   -   -
+-       -       -
 Zelle1  Zelle2  Zelle3
 Zelle4  Zelle5  Zelle6
--   -   -
+-       -       -
