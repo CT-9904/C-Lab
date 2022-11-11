@@ -445,3 +445,36 @@ int main()
 Das kaufmännische Und (Et-Zeichen) vor dem Variablennamen ist ein Adressoperator. Damit wird der eingebene Wert unter der Adresse hinterlegt, auf der die Variable gesetzt ist. Eine ausführliche Erläuterung wird es im Kapitel zu Zeigern geben.
 
 </details>
+
+## Der sizeof-Operator
+
+Der sizeof-Operator gibt die Anzahl Bytes zurück, die eine Variable, ein Zeiger oder ein Datentyp benötigt. Der sizeof-Operator wird häufig zur Reservierung von Speicher genutzt, dazu aber zu einem späteren Zeitpunkt mehr. Das Ergebnis, was man vom sizeof-Operator erhält, ist eine Konstante vom Typ size_t.
+
+<details>
+<summary>Beispiel</summary>
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    // Ausgabe von der Größe einer Variablen
+    int Variable;
+    printf("sizeof(Variable) = %d Byte \n", sizeof(Variable));
+
+    // Ausgabe von der Größe eines Datentyps
+    printf("sizeof(double) = %d Byte \n", sizeof(double));
+
+    return 0;
+}
+```
+
+</details>
+
+<details>
+<summary>Der Typ size_t</summary>
+
+Das Ergebnis von einer sizeof-Operation ist vom Typ size_t. size_t ist nichst anderes, als ein unsigned int welcher speziell vom sizeof-Operator genutzt wird.
+
+</details>
