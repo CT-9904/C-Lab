@@ -216,3 +216,190 @@ int main()
 ```
 
 </details>
+
+## Der Fehler zwischen Vergleich und Zuweisung
+
+Ein beliebter Fehler ist, dass man den Zuweisungsoperator (=) und den Gleich-Vergleichsoperator (==) miteinander verwechselt. Folgendes Beispiel dient dazu, um den Unterschied ganz explizit zu verdeutlichen:
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int x = 9; //x wird der Wert 9 zugewiesen
+    int y = 5; //y wird der Wert 5 zugewiesen
+
+    _Bool Vergleich;
+    Vergleich = (x == y);
+    /*
+    Innerhalb der Klammer findet ein Vergleich zwischen den Variablen
+    x und y, mittels dem Gleich-Vergleichsoperator statt. Das Ergebnis
+    aus diesem Vergleich wird der Variablen Vergleich zugewiesen.
+    */
+
+    return 0;
+}
+```
+
+## Mathematische Operationen
+
+Mit den bisherigen Operatoren lassen sich einfache Berechnungen realisieren. Will man bestimmte mathematische Berechnungen, wie z.B. Wurzel ziehen, Trigonometrie oder Berechnungen mit komplexen Zahlen durchführen, so ist das einbinden vo zusätzlichen Headerdateien erforderlich, nämlich "math.h" und "complex.h".
+
+Alternativ kann man auch die Headerdatei "tgmath.h" benutzen. In "tgmath.h" sind die beiden Headerdateien "math.h" und "complex.h" enthalten. Hinzukommt das die Makros in ihr typengenerisch definiert sind.
+
+<details>
+<summary>Bedeutung von typengenerisch</summary>
+
+Typengenerisch bedeutet, dass etwas nicht ans Typ-System gebunden ist. Konkret auf den Fall der Makros aus "tgmath.h" bezogen, bedeutet das, das man sie mit Variablen der Typen char, short, int, long, float und double nutzen kann.
+
+</details>
+
+## Logische Operatoren
+
+Bei den logischen Operatoren handelt es sich um die UND- und ODER-Verknüpfung, sowie die Negation. Diese sollten aus den Grundlagen der Informatik bekannt sein.
+
+In den folgenden Tabelle sind die logischen Operatoren, sowie deren Bedeutungen, zusammengefasst.
+
+| Operator | Bedeutung | Beispiel |
+|----------|-----------|----------|
+| && | logisches UND | x && y |
+| \|\| | logisches ODER | x \|\| y |
+| ! | logisches NICHT | !x |
+
+Bei logischen Operatoren gilt, dass jeder von 0 verschiedene Wert als "wahr" gewertet und 0 als "falsch" gewertet wird.
+
+<details>
+<summary>Hinweis<summary>
+
+Bei den Verknüpfungen gilt die boolsche Algebra!
+
+</details>
+
+<details>
+<summary>Beispiel</summary>
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int x = 9; // x wird der Wert 9 zugewiesen
+    int y = 5; // y wird der Wert 5 zugewiesen
+
+    int BoolWert = x && y;
+
+    if (BoolWert > 0)
+    {
+        printf("x und y sind groesser 0\n");
+    }
+    else
+    {
+        printf("Mindestens ein Wert ist gleich 0\n");
+    }
+
+    y = 0;
+    BoolWert = x || y;
+
+    if (BoolWert > 0)
+    {
+        printf("Mindestens ein Wert ist grosser 0\n");
+    }
+    else
+    {
+        printf("Beide Werte sind 0\n");
+    }
+
+    x = !x;
+    y = !y;
+
+    printf("Wert von x: %d\n", x);
+    printf("Wert von y: %d\n", y);
+
+    return 0;
+}
+```
+
+Auf die if-else-Struktur wird später konkreter eingegangen! Sie war für dieses Beispiel notwendig, um die Funktionsweise der logischen Operatoren zu verdeutlichen.
+
+</details>
+
+## Bit-Operatoren
+
+Bei den Bit-Operatoren handelt es sich, unter anderem auch, um die UND- und ODER-Verknüpfung. Darüber hinaus gibt es noch die Exclusiv ODER-Verknüpfung, das Einerkomplement und die Möglichkeit Bits zu schieben. Auch hier gilt die boolsche Algebra.
+
+Bit-Operatoren sind nur auf ganzzahlige Typen anwendbar!
+
+Im Gegensatz zu logischen Operatoren verknüpfen Bit-Operatoren die Werte nicht in der Form, wie sie übergeben wurden, sondern bitweise.
+
+Eine UND-Verknüpfung aus 5 und 7 also nicht "wahr" als Ergebnis, sondern sieht wie folgt aus:
+
+| Dezimal | Binär |
+|---------|-------|
+| 5 | 0101 |
+| 7 | 0111 |
+
+```
+        0101
+UND     0111
+------------
+        0101 -> 5 (dezimal)
+```
+
+Zusammenfassung der Bit-Operatoren:
+
+| Operator | Bedeutung | Erläuterung |
+|----------|-----------|-------------|
+| & | bitweise UND | UND-Verknüpfung von zwei Operanden |
+| \| | bitweise ODER | ODER-Verknüpfung von zwei Operanden |
+| ^ | bitweise Exclusiv ODER | XOR-Verknüpfung von zwei Operanden |
+| ~ | Einerkomplement | Invertiert alle Bits des Operanden |
+| << | Links-Shift | Niederwedertige Bits werden mit Nullen aufgefüllt |
+| >> | Rechts-Shift | Höherwertige Bits werden mit Nullen aufgefüllt |
+
+<details>
+<summary>Beispiel</summary>
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int x = 10; // x wird der Wert 10 zugewiesen
+    int y = 6;  // y wird der Wert 6 zugewiesen
+
+    int z;
+
+    // Bitweises UND
+    z = x & y;
+    printf("z: %d\n", z);
+
+    // Bitweises ODER
+    z = x | y;
+    printf("z: %d\n", z);
+
+    // Bitweises XOR
+    z = x ^ y;
+    printf("z: %d\n", z);
+
+    // Shift
+    z = x << 1; // Links-Shift um 1 Bit
+    printf("z: %d\n", z);
+
+    z = y >> 1; // Rechts-Shift um 1 Bit
+    printf("z: %d\n", z);
+
+    // Einerkomplement
+    x = ~x;
+    y = ~y;
+
+    printf("x: %d\n", x);
+    printf("y: %d\n", y);
+
+    return 0;
+}
+```
+
+</details>
