@@ -244,9 +244,9 @@ int main()
 
 ## Mathematische Operationen
 
-Mit den bisherigen Operatoren lassen sich einfache Berechnungen realisieren. Will man bestimmte mathematische Berechnungen, wie z.B. Wurzel ziehen, Trigonometrie oder Berechnungen mit komplexen Zahlen durchführen, so ist das einbinden vo zusätzlichen Headerdateien erforderlich, nämlich "math.h" und "complex.h".
+Mit den bisherigen Operatoren lassen sich einfache Berechnungen realisieren. Will man bestimmte mathematische Berechnungen, wie z.B. Wurzel ziehen, Trigonometrie oder Berechnungen mit komplexen Zahlen durchführen, so ist das einbinden vo zusätzlichen Headerdateien erforderlich, nämlich math.h und complex.h.
 
-Alternativ kann man auch die Headerdatei "tgmath.h" benutzen. In "tgmath.h" sind die beiden Headerdateien "math.h" und "complex.h" enthalten. Hinzukommt das die Makros in ihr typengenerisch definiert sind.
+Alternativ kann man auch die Headerdatei tgmath.h benutzen. In tgmath.h sind die beiden Headerdateien math.h und complex.h enthalten. Hinzukommt das die Makros in ihr typengenerisch definiert sind.
 
 <details>
 <summary>Bedeutung von typengenerisch</summary>
@@ -403,3 +403,14 @@ int main()
 ```
 
 </details>
+
+## Eingabe mittels scanf-Funktion
+
+scanf steht für "scan formatted" und bildet das Gegenstück zur Funktion printf. Mit der scanf-Funktion werden Werte, über die Standardeingabe, ins Programm eingelesen.
+
+Auch scanf ist in der Headerdatei stdio.h deklariert.
+
+-   -   -
+Zelle1  Zelle2  Zelle3
+Zelle4  Zelle5  Zelle6
+-   -   -
