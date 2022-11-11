@@ -410,7 +410,38 @@ scanf steht für "scan formatted" und bildet das Gegenstück zur Funktion printf
 
 Auch scanf ist in der Headerdatei stdio.h deklariert.
 
--       -       -
-Zelle1  Zelle2  Zelle3
-Zelle4  Zelle5  Zelle6
--       -       -
+### Aufbau von scanf
+
+Der Aufbau von scanf ist dem von printf sehr ähnlich. Das Funktionszeichen, vom Datentyp der eingelesen werden soll, steht zwischen zwei Anführungszeichen ("). Der Formatstring und die Variablenliste sind auch hier mit einem Komma getrennt. Bei den Variablen in der Variablenliste muss vor dem Variablennamen ein & gesetzt werden. Das ist ganz wichtig, da man ansonsten einen Fehler bekommt.
+
+```c
+scanf("%d", &Variable);
+```
+
+<details>
+<summary>Beispiel</summary>
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int Zahl;
+
+    printf("Bitte geben Sie eine Zahl ein: ");
+    scanf("%d", &Zahl);
+    printf("Zahl lautet %d\n", Zahl);
+
+    return 0;
+}
+```
+
+</details>
+
+<details>
+<summary>Bedeutung vom &</summary>
+
+Das kaufmännische Und (Et-Zeichen) vor dem Variablennamen ist ein Adressoperator. Damit wird der eingebene Wert unter der Adresse hinterlegt, auf der die Variable gesetzt ist. Eine ausführliche Erläuterung wird es im Kapitel zu Zeigern geben.
+
+</details>
