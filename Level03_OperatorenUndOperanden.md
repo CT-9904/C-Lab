@@ -478,3 +478,54 @@ int main()
 Das Ergebnis von einer sizeof-Operation ist vom Typ size_t. size_t ist nichst anderes, als ein unsigned int welcher speziell vom sizeof-Operator genutzt wird.
 
 </details>
+
+## Typumwandlung
+
+In einigen Fällen wird es sich nicht vermeiden lassen, dass man Werte von verschiedenen Datentypen miteinander verrechnen muss. Dafür muss man eine Typumwandlung vollziehen. Bekannter ist der Begriff TypeCasting für dieses Verfahren. Beim TypeCasting wandelt man einen Datentyp in einen anderen Datentyp um. Man unterscheidet zwischen impliziten und explizitem TypeCasting.
+
+### Implizites TypeCasting
+
+Das implizite Casting macht der Compiler von selbst. Dabei werden die Datentypen immer in den größtmöglichen Datentyp umgewandelt, der benötigt wird. Verrechnet man also einen char-, einen short- und einen int-Wert miteinander, so werden alle Werte in den Typ int umgewandelt. Jeder Typ lässt sich mit jedem anderen Typ verrechnen. Es gibt jedoch Fälle wo es zu Fehlern oder, noch schlimmer, zu undefiniertem Verhalten (Undefined behavior) kommen kann. Will man das Vermeiden, ist es sinnvoll das explizite TypeCasting anzuwenden.
+
+### Explizite TypeCasting
+
+Beim expliziten TypeCasting gibt der Programmierer vor in welchen Datentyp ein anderer Datentyp umgewandelt werden soll. Dies erfolgt mittels Cast-Operators. Der Cast-Operator sind zwei runde Klammern, die vor einem Variablennamen geschrieben werden. In den Klammern wird der Datentyp geschrieben, in der die Variable umgewandelt werden soll.
+
+Aufbau Cast-Operator:
+
+```c
+(Datentyp)Variable;
+
+/*
+Variable kann beliebigen Typ haben. Sie wird in den Datentyp innerhalb des Cast-Operators umgewandelt.
+*/
+```
+
+<details>
+<summary>Beispiel</summary>
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int Zahl1 = 150;
+    int Zahl2 = 4;
+
+    double Ergebnis;
+    /*
+    Umwandlung der Variable Zahl1 von Datentyp int
+    zu Datentyp float mittels Cast-Operator.
+    Das Ergebnis der Rechnung wird implizit in den
+    Typ double umgewandelt.
+    */
+    Ergebnis = (float)Zahl1 / Zahl2;
+
+    printf("%d / %d = %f\n", Zahl1, Zahl2, Ergebnis);
+
+    return 0;
+}
+```
+
+</details>
