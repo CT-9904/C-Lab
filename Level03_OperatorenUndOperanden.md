@@ -529,3 +529,100 @@ int main()
 ```
 
 </details>
+
+## Hierarchie der Operatoren
+
+In den folgenden Tabellen sind die gezeigten Operatoren ihrer Priorität nach gelistet.
+
+**13. Priorität:**
+
+| Operator | Bedeutung / Name | Verarbeitungsrichtung |
+|----------|------------------|-----------------------|
+| () | Funktionsaufruf | Links nach Rechts |
+| (Postfix)++ / (Postfix)-- | Wert um 1 erhöhen bzw. verringern nach Auswertung | Links nach Rechts |
+
+**12. Priorität:**
+
+| Operator | Bedeutung / Name | Verarbeitungsrichtung |
+|----------|------------------|-----------------------|
+| ++(Präfix) / --(Präfix) | Wert um 1 erhöhen bzw. verringern vor Auswertung | Links nach Rechts |
+| ! | logisches NICHT | Links nach Rechts |
+| ~ | Einerkomplement | Links nach Rechts |
+| +(Vorzeichen) / -(Vorzeichen) | Plus und Minus als Vorzeichen | Links nach Rechts |
+| & | Adressoperator | Links nach Rechts |
+| sizeof | sizeof-Operator | Links nach Rechts |
+| (Datentyp) | Cast-Operator | Links nach Rechts |
+
+**11. Priorität:**
+
+| Operator | Bedeutung / Name | Verarbeitungsrichtung |
+|----------|------------------|-----------------------|
+| * | Multiplikation / Mal-Operator | Links nach Rechts |
+| / | Division / Geteilt-Operator | Links nach Rechts |
+| % | Modulo-Operator | Links nach Rechts |
+
+**10. Priorität:**
+
+| Operator | Bedeutung / Name | Verarbeitungsrichtung |
+|----------|------------------|-----------------------|
+| + | Addition / Plus-Operator | Links nach Rechts |
+| - | Subtraktion / Minus-Operator | Links nach Rechts |
+
+**9. Priorität:**
+
+| Operator | Bedeutung / Name | Verarbeitungsrichtung |
+|----------|------------------|-----------------------|
+| << | Links-Shift | Links nach Rechts |
+| >> | Rechts-Shift | Links nach Rechts |
+
+**8. Priorität:**
+
+| Operator | Bedeutung / Name | Verarbeitungsrichtung |
+|----------|------------------|-----------------------|
+| < | Kleiner | Links nach Rechts |
+| > | Größer | Links nach Rechts |
+| <= | Kleiner gleich | Links nach Rechts |
+| >= | Größer gleich | Links nach Rechts |
+
+**7. Priorität:**
+
+| Operator | Bedeutung / Name | Verarbeitungsrichtung |
+|----------|------------------|-----------------------|
+| == | Gleich | Links nach Rechts |
+| != | Ungleich | Links nach Rechts |
+
+**6. Priorität:**
+
+| Operator | Bedeutung / Name | Verarbeitungsrichtung |
+|----------|------------------|-----------------------|
+| & | Bitweises UND | Links nach Rechts |
+
+**5. Priorität:**
+
+| Operator | Bedeutung / Name | Verarbeitungsrichtung |
+|----------|------------------|-----------------------|
+| ^ | Bitweises XOR | Links nach Rechts |
+
+**4. Priorität:**
+
+| Operator | Bedeutung / Name | Verarbeitungsrichtung |
+|----------|------------------|-----------------------|
+| \| | Bitweises ODER | Links nach Rechts |
+
+**3. Priorität:**
+
+| Operator | Bedeutung / Name | Verarbeitungsrichtung |
+|----------|------------------|-----------------------|
+| && | Logisches UND | Links nach Rechts |
+
+**2. Priorität:**
+
+| Operator | Bedeutung / Name | Verarbeitungsrichtung |
+|----------|------------------|-----------------------|
+| \|\| | Logisches ODER | Links nach Rechts |
+
+**1. Priorität:**
+
+| Operator | Bedeutung / Name | Verarbeitungsrichtung |
+|----------|------------------|-----------------------|
+| = | Zuweisungsoperator | Rechts nach Links |
