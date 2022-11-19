@@ -129,3 +129,119 @@ Die Variable i dient als Zählvariable für diie Abbruch-Bedingung. Sie ist eine
 Das Beispiel zeigt nur eine Möglichkeit einer Abbruch-Bedingung bei einer while-Schleife. Je nach Anwendungsfall kann (muss) man die Abbruch-Bedingung auch anders realisieren.
 
 </details>
+
+## Die do-while-Schleife
+
+Wie schon zu Beginn erwähnt, handelt es sich bei der do-while-Schleife, im Gegensatz zu den anderen Beiden, um eine fußgesteurte Schleife. Während bei einer while-Schleife die Möglichkeit besteht, dass sie unter Umständen gar nicht ausgeführt wird, wird eine do-while-Schleife immer mindestens einmal ausgführt. Die do-while-Schleife ist wie folgt aufgebaut:
+
+```c
+do{
+    Anweisungen
+}while(Ausdruck);
+```
+
+Eingeleitet wird die Schleife mit dem Schlüsselwort do. Auf das Schlüsselwort folgt der Anweisungsblock. Hinter der schließenden Klammer des Anweisungsblock steht das Schlüsselwort while mit dem runen Klammernpaar, wo dirn der Ausdruck enthalten ist (so wie man es auch von der while-Schleife gewohnt ist). Eine Besonderheit der do-while-Schleife (und  gleichzeitig auch eine der häufigsten Fehlerquellen, wenn man sie benutzt) ist das Semikolon, hinter dem runden Klammernpaar des Ausdrucks. Eine do-while-Schleife muss mit einem Semikolon abgeschlossen werden. Dies gibt die Syntax vor!
+
+<details>
+<summary>Beispiel</summary>
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int cycle = 0;
+    int i = 0;
+
+    do
+    {
+        cycle = i + 1;
+        printf("%d. Durchlauf\n", cycle);
+        i++;
+    }while(i < 5);
+
+    return 0;
+}
+```
+
+Zu sehen ist im Beispiel eine do-while-Schleife, die fünf Durchläufe ausgeführt und ihren aktuellen Schleifendurchlauf, mittels printf-Anweisung, auf der Konsole ausgibt.
+
+Bis auf die Tatsache, dass sie definitiv mindestens einmal ausgeführt wird, ist die Logik der do-while-Schleife identisch mit der, der while-Schleife.
+
+</details>
+
+## Umwandlug von Schleifen
+
+Wie man erkennen konnte, haben die Programme der drei vorangegangenen Beispiele alle zur identisch gleichen Ausgabe geführt, obwohl drei unterschiedliche Arten von Schleifen genutzt wurden. Das liegt daran, dass man jede Schleife in eine Andere umwandeln kann.
+
+Gängige Praxis ist es aber, aber dass man bei einer bekannten und/oder fest vorgeschriebenen Anzahl an Iterationenen die for-Schleife verwendet und bei einer unbekannten bzw. variablen Anzahl an Iterationen die while-Schleife nutzt. Ist die Anwendung einer while-Schleife nötig, man jedoch sicher stellen möchte das sie mindestens einmal ausgeführt wird, bentutzt man die do-while-Schleife.
+
+## Endlosschleifen
+
+Eine Nutzungsmöglichkeit von Schleifen, bei deren Nutzung man bedacht vorgehen sollte, sind Endlosschleifen. Aus Versehen kann man Endlosschleifen schneller programmieren, als man denkt. Der häufigste Fehler ist, dass man eine Abbruch-Bedingung definiert, die erfüllt wird. Im schlimmsten Fall kann dann das Programm die Hardware zum Abstürzen bringen.
+
+Endlosschleifen werden jedoch auch ganz bewusst angewendet z.B. Serveranwendungen.
+Möchte man eine Endlosschleife programmieren, so sollte man sie wohlbedacht konstruieren. Außerdem sollte man eine Abbruch-Bedingumng definieren, die bei Fehlverhalten der Schleife ausgelöst wird!
+
+In den folgenden drei Beispielen sind die einfachsten Versionen von Endlosschleifen zu sehen. Die Ausführung dieser Schleifen, auf der eigenen Hardware, unterliegt eigener Gefahr!
+
+<details>
+<summary>Beispiel einer Endlos-for-Schleife</summary>
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    for (;;)
+    {
+        printf("Endlosschleife!\n");
+    }
+
+    return 0;
+}
+```
+
+</details>
+
+<details>
+<summary>Beispiel einer Endlos-while-Schleife</summary>
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    while (1)
+    {
+        printf("Endlosschleife!\n");
+    }
+
+    return 0;
+}
+```
+
+</details>
+
+<details>
+<summary>Beispiel einer Endlos-do-while-Schleife</summary>
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    do
+    {
+        printf("Endlosschleife!\n");
+    } while (1);
+
+    return 0;
+}
+```
+
+</details>
