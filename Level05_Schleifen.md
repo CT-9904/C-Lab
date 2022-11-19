@@ -83,3 +83,49 @@ Im Kapitel über Arrays wird deutlich, warum es Sinn macht dass for-Schleifen vo
 </details>
 
 </details>
+
+## Die while-Schleife
+
+Ist die Anzahl der Iterationenen nicht bekannt, ist es gängige Praxis die while-Schleife zu verwenden. Die Schleife ist wie folgt aufgebaut:
+
+```c
+while(Ausdruck){
+    Anweisungen
+}
+```
+
+Die Schleife wird mit dem Schlüsselwort while eingeleitet. In dem runden Klammernpaar dahinter steht der Ausdruck. Solange dieser wahr ist, wird die Schleife ausgeführt. Der Ausdruck ist jedoch nicht gleich die Startbedingung der while-Schleife. Je nach dem was als Ausdruck hinterlegt ist, kann es vorkommen, dass eine Schleife gar nicht erst augeführt wird. Außerdem muss man sich bei der while-Schleife eine Abbruch-Bedingung selbst zusammenbasteln. Bei der for-Schleife ist die Abbruch-Bedingung durch das Zusammenspiel der Durchlauf-Bedingung und der Operation (Reintialisierung) gegeben.
+Hinter dem runden Klammernpaar steht, auch hier, der Anweisungsblock.
+
+<details>
+<summary>Beispiel</summary>
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int cycle = 0;
+    int i = 0;
+
+    while (i < 5)
+    {
+        cycle = i + 1;
+        printf("%d. Durchlauf\n", cycle);
+        i++;
+    }
+
+    return 0;
+}
+```
+
+In dem Beispiel sieht man eine while-Schleife die fünf Durchläuf ausführt und ihren aktuellen Schleifendurchlauf, mittels printf-Anweisung, auf der Konsole ausgibt.
+
+Die Hilfvariablen cycle und i stehen außerhalb der Schleife. Würde man sie innerhalb der Schleife initialisieren, würden beide Variablen bei jedem Schleifendurchlauf auf 0 gesetzt werden. Zufolge hätte das, dass auf der Konsole permanent "1. Durchlauf" ausgegeben wird, da es zu keiner Abbruch-Bedingung kommt. Die Variable cycle speichert, auch hier, die Nummer des aktuellen Schleifendurchlaufs.
+
+Die Variable i dient als Zählvariable für diie Abbruch-Bedingung. Sie ist eine Komponente Dieser. Der andere Teil der Abbruch-Bedingung ist der Ausdruck im runden Klammernpaar der while-Schleife. Innerhalb der Schleife wird i mit jedem Durchlauf inkrementiert. Beträgt der der Wert von i 5, ist der Ausdruck nicht mehr erfüllt und die Schleife wird verlassen.
+
+Das Beispiel zeigt nur eine Möglichkeit einer Abbruch-Bedingung bei einer while-Schleife. Je nach Anwendungsfall kann (muss) man die Abbruch-Bedingung auch anders realisieren.
+
+</details>
