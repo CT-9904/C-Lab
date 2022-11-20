@@ -61,8 +61,8 @@ Die Daten aus den folgenden Tabellen gelten für ein 32-Bit-Sytem!
 
 | Typ | Größe | Wertebereich | Genauigkeit |
 |-----|-------|--------------|-------------|
-| char | 32 Bit / 4 Byte | 1,2 * 10<sup>-38</sup> bis 3,4 * 10<sup>38</sup> | 6 Nachkommastellen |
-| short | 64 Bit / 8 Byte | 2,3 * 10<sup>-308</sup> bis 1,7 * 10<sup>308</sup> | 15 Nachkommastellen |
+| float | 32 Bit / 4 Byte | 1,2 * 10<sup>-38</sup> bis 3,4 * 10<sup>38</sup> | 6 Nachkommastellen |
+| double | 64 Bit / 8 Byte | 2,3 * 10<sup>-308</sup> bis 1,7 * 10<sup>308</sup> | 15 Nachkommastellen |
 
 # Variablen
 
@@ -202,6 +202,15 @@ Beispiel:
 void ausgebenString();
 int addiereZahlen();
 ```
+
+<details>
+<summary>Hinweis</summary>
+
+Beim Benennen von Variablen und Funktionen gilt, dass aussagkräftige Namen gewählt werden müssen!
+
+Außerdem dürfen gewählte Namen nicht mit einer Zahl beginnen, sondern müssen mit einem Buchstaben anfangen. Desweiteren dürfen in den gewählten Namen auch keine Leerzeichen, sowie Umlaute (ä, Ä, ö, Ö, ü, Ü) enthalten sein.
+
+</details>
 
 ## Deklaration - Definition - Initialisierung
 
