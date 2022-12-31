@@ -18,4 +18,31 @@ Bei Funktionen wird void verwendet, um Funktionen zu erstellen die keine Werte z
 
 Auf die Verwendung von void bei Zeigern wird später eingegangen.
 
+## Der Grundaufbau einer Funktion
+
+Eine Funktion besteht aus zwei grundlegenden Teilen, nämlich dem Funktionskopf und dem Funktionskörper. Beim Funktionskörper handelt es sich einfach nur um einen Anweisungsblock. der Funktionskopf ist etwas komplexer aufgebaut und besteht aus mehreren Teilkomponenten. Eine Funktion wird durch den Funktionskopf deklariert.
+
+Syntax einer Funktion:
+
+```c
+<Datentyp><Funktionsname>([Parameter])
+{
+	Anweisungen
+}
+```
+
+Der Funktionskopf besteht aus vier wesentlichen Bestandteilen nämlich aus einem Datentypen, einem Funktionsnamen, einem runden Klammernpaar einem oder mehreren Parametern innerhalb des runden Klammernpaares. Auf die geschlossene Klammer folgt der Funktionskörper.
+
+## Rückgabe einer Funktion
+
+Wie schon zu Beginn erwähnt gibt es zwei Arten von Funktionen. Sie unterscheiden sich in ihrem Rückgabewert. Der Datentyp einer Funktion gibt vor von welchem Datentyp die Rückgabe der Funktion ist oder kürzer: **Datentyp Funktion = Datentyp Rückgabewert**
+
+Soll eine Funktion keinen Rückgabewert haben, nutzt man den Datentyp void.
+
+## Parameter
+
+Parameter sind Werte, die an die Funktion übergeben werden. Parameter sind optional, das runde Klammernpaar in dem sie stehen jedoch nicht! Bei einer Funktion, wo Parameter nicht erforderlich sind, lässt man das Klammernpaar leer oder schreibt (übergibt man der Funktion) ein void. Beides ist gleichwertig.
+
+Die Parameter müssen nicht vom gleichen Datentyp sein, wie die Funktion. Wenn man also z.B. eine Funktion vom Typen float erstellt, können die Parameter von ihr auch vom Typen int sein. Der Wert, der von dieser Funktion zurückgeben wird, ist jedoch vom Datentyp float.
+
 
