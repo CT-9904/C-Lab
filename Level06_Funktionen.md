@@ -45,4 +45,46 @@ Parameter sind Werte, die an die Funktion übergeben werden. Parameter sind opti
 
 Die Parameter müssen nicht vom gleichen Datentyp sein, wie die Funktion. Wenn man also z.B. eine Funktion vom Typen float erstellt, können die Parameter von ihr auch vom Typen int sein. Der Wert, der von dieser Funktion zurückgeben wird, ist jedoch vom Datentyp float.
 
+## Die main-Funktion (Teil 2)
 
+Gehen wir nun ganz an den Anfang zurück. Das Allererste was vorgestellt wurde, war die main-Funktion:
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    return 0;
+}
+```
+
+Wie vorhin erwähnt, muss jede Funktion einen Datentypen besitzen. Die main-Funktion bildet da keine Ausnahme! Die main-Funktion, wie wir sie genutzt haben, ist vom Typ int. Dem Entsprechend ist die, mittels return-Anweisung, zurückgegebene 0 auch vom Typ int.
+
+Die korrekte Form der main-Funktion, nach C99-Standard, sieht wie folgt aus:
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+    return 0; // muss nicht verwendet werden
+}
+```
+
+Bei dieser Form der main-Funktion kann man sich das return 0 auch sparen, da man den Parameter void übergeben hat. Am Ende ihrer Ausführung wird also nichts zurückgegeben.
+
+Eine alternative Form der main-Funktion, mit der man häufiger in Berührung kommt, ist die void-main-Funktion. Statt die main-Funktion vom Datentyp int zu definieren, wird sie vom Datentyp void definiert:
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+void main()
+{
+    
+}
+```
+
+Im Gegensatz zur int-main-Funktion gibt die void-main-Funktion in keinsterweise was zurück. Die Anweisung return 0; würde zu einem Fehler führen! Man sollte die void-main-Funktion nur benutzen, wenn man Programme schreibt, die komplett ausgeführt (also nicht vor erreichen der letzten Codezeile beendet) werden.
