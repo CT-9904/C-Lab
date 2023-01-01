@@ -88,3 +88,78 @@ void main()
 ```
 
 Im Gegensatz zur int-main-Funktion gibt die void-main-Funktion in keinsterweise was zurück. Die Anweisung return 0; würde zu einem Fehler führen! Man sollte die void-main-Funktion nur benutzen, wenn man Programme schreibt, die komplett ausgeführt (also nicht vor erreichen der letzten Codezeile beendet) werden.
+
+## Beispiel zur Anwendung von Funktion
+
+Im folgenden werden zwei Int-Zahlen miteinander addiert. Die Addition wirs in eine Funktion ausgelagert. Dieses einfache Beispiel soll die praktische Anwendung von Funktionen verdeutlichen.
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+// Deklaration und Definition der Funktion
+int addiereIntZahlen(int Zahl1, int Zahl2)
+{
+    int Ergebnis = Zahl1 + Zahl2;
+
+    return Ergebnis;
+}
+
+// main-Funktion
+int main()
+{
+    int Wert1 = 42;
+    int Wert2 = 33;
+
+    int Summe = addiereIntZahlen(Wert1, Wert2);
+
+    printf("Die Summe der beiden Int-Zahlen %d und %d ist %d.\n", Wert1, Wert2, Summe);
+
+    return 0;
+}
+```
+
+Funktionen müssen vor der main-Funktion, mindestens, deklariert worden sein. Das liegt daran, dass der Compiler, beim Übersetzen des Quellcodes in Maschinensprache, sich von oben nach unten durcharbeitet. Außerdem werden Programme von oben nach unten abgearbeitet (ausgeführt). Somit ist für die main-Funktion alles, was nach (unter) ihr deklariert worden ist, irrelevant.
+Die Definition einer Funktion kann auch zu einem späteren Zeitpunkt (also nach der main-Funktion) erfolgen. Durch die Deklaration vor der main-Funktion wird dem Programm vermittelt, dass eine Funktion (mit der entsprechenden Bezeichnung) existiert. Man hätte also das vorangegangene Programm auch so schreiben können:
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+// Deklaration der Funktion
+int addiereIntZahlen(int Zahl1, int Zahl2);
+
+// main-Funktion
+int main()
+{
+    int Wert1 = 42;
+    int Wert2 = 33;
+
+    int Summe = addiereIntZahlen(Wert1, Wert2);
+
+    printf("Die Summe der beiden Int-Zahlen %d und %d ist %d.\n", Wert1, Wert2, Summe);
+
+    return 0;
+}
+
+// Definition der Funktion
+int addiereIntZahlen(int Zahl1, int Zahl2)
+{
+    int Ergebnis = Zahl1 + Zahl2;
+
+    return Ergebnis;
+}
+```
+
+<details>
+<summary>Hinweis</summary>
+
+Die Syntax gibt vor, dass Deklarationen von Funktionen mit einem Semikolon abgeschlossen werden müssen. Wenn man jedoch eine Funktion auch überhalb der main-Funktion definiert, symbolisiert die schließende geschweifte Klammer (}) das Ende.
+
+</details>
+
+Über der main-Funktion wird die Funktion addiereIntZahlen deklariert. Die Deklaration einer Funktion besteht nur aus dem Funktionskopf.
+
+Unter der main Funktion wird die Funktion definiert. Die Funktion ist vom Datentyp int und wie schon in der Deklaration "bekanntgemacht" hat sie die Bezeichnung addiereIntZahlen und die an sie übergebenen Parameter sind int Zahl1 und int Zahl2. Mit den beiden Parametern wird innerhalb des Funktionskörpers (Anweisungsblock der Funktion) gearbeitet. Im Funktionskörper ist die Variable int Ergebnis definiert. Die Initialisierung dieser Variable besteht aus der Rechnung Zahl1 + Zahl2. Am Ende der Funktion wird mittels return-Anweisung der Wert von der Variable Ergebnis an die aufrufende Funktion (in diesem Fall die main-Funktion) zurückgeben. Der zurückgegebene Wert ist vom Typ int.
+
+Innerhalb der Funktion werden erstmal die beiden Variablen Wert1 und Wert2 erstellt. Wert1 wird mit 42 und Wert2 mit 33 initialisiert. Beide Variablen sind vom Typ Integer. Als nächstes wird die Variable Summe erstellt. Auch sie ist vom Typ Integer. Statt jedoch die Variable mit einem Wert zu initialisieren oder eine Rechnung durchzuführen, wird hinter dem Zuweisungsoperator die Funktion addiereIntZahlen aufgerufen.
