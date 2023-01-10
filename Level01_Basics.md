@@ -35,7 +35,7 @@ Diese Headerdatei ist eine Sammlung von einer Vielzahl von Funktionen und Makros
 
 Diese Funktion ist das Kerngerüst jedes Programms. Sie darf nur einmal enthalten sein und ohne sie ist kein Programm funktionsfähig.
 
-Auf die Bedeutung von int wird später eingegangen.
+Auf die Bedeutung vom int wird später eingegangen.
 </details>
 
 <details>
@@ -46,19 +46,19 @@ Die return-Anweisung beendet die Funktion. Steht am Ende der main-Funktion "retu
 
 ## Die Bedeutung der geschweiften Klammern
 
-Geschweifte Klammern ({}) bilden einen Anweisungsblock. In einem Anweisungsblock werden mehrere Anweisungen zu einer Einheit zusammengefasst. Die Anweisungen in einem Anweisungsblock werden von oben nach unten abgearbeitet.
+Geschweifte Klammern ("{" und "}") bilden einen Anweisungsblock. In einem Anweisungsblock werden mehrere Anweisungen zu einer Einheit zusammengefasst. Die Anweisungen in einem Anweisungsblock werden von oben nach unten abgearbeitet.
 
 Regel Nr.1: Geschweifte Klammern dienen dazu mehrere Anweisungen zu einem Anweisungsblock zusammenzufassen.
 
 ## Die Bedeutung des Semikolons
 
-Das Semikolon (;) ist eines der wichtigsten Zeichen, wenn nicht sogar das wichtigste Zeichen, in C. Am Ende jeder Anweisung muss ein Semikolon stehen! Das Semikolon zeigt das Ende einer Anweisung an, genau so wie ein Punkt einen Satz beendet.
+Das Semikolon (";") ist eines der wichtigsten Zeichen, wenn nicht sogar das wichtigste Zeichen, in C. Am Ende jeder Anweisung muss ein Semikolon stehen! Das Semikolon zeigt das Ende einer Anweisung an, genau so wie ein Punkt einen Satz beendet.
 
 Regel Nr. 2: Jede Anweisung muss mit einem Semikolon abgeschlossen werden.
 
 ## Ausgabe mittels printf-Funktion
 
-printf steht für "print formatted". Sie ist eine der häufig genutzen Funktionen in C. Sie gibt formattierten Text über die Standardausgabe aus. Der Text, der in die Funktion eingegeben wird, kann aus Klarschrift, Steuerzeichen und Formatzeichen bestehen.
+printf steht für "print formatted". Sie ist eine der häufig genutzen Funktionen in C. Sie gibt formatierten Text über die Standardausgabe aus. Der Text, der in die Funktion eingegeben wird, kann aus Klarschrift, Steuerzeichen und Formatzeichen bestehen.
 
 printf ist in der Headerdatei stdio.h deklariert.
 
@@ -88,7 +88,7 @@ printf ist in der Headerdatei stdio.h deklariert.
 
 | Formatzeichen | Bedeutung |
 |---------------|------------------------------|
-|		%%		| Ausgabe von Zeichen		   |
+|		%%		| Ausgabe vom Zeichen: %	   |
 |		%c		| Zeichen für char			   |
 |   	%d		| Zeichen für Ganzzahlen (short, int) |
 |   	%ld		| Zeichen für lange Ganzzahlen (long) |
@@ -112,7 +112,7 @@ printf("Hallo Welt\n");
 
 printf ist eine Funktion, die aus mehreren Teilen besteht. Im Verlauf der Zusammenfassung wird auf alle Teile eingegangen. Zum jetzigen Zeitpunkt reicht es zu wissen, dass der Text der, über die Standardausgabe, ausgegeben werden soll zwischen zwei Anführungszeichen (") steht.
 
-Die obige Codezeile steigt eine aufgerufene printf-Anweisung. printf ist der Funktionsaufruf. Das was in den runden Klammern und zwischen den Anführungszeichen steht, ist der Formatstring, der an die Funktion übergeben wird. Auch das Steuerzeichen \n wird an die Funktion übergeben.
+Die obige Codezeile zeigt eine aufgerufene printf-Anweisung. printf ist der Funktionsaufruf. Das was in den runden Klammern und zwischen den Anführungszeichen steht, ist der Formatstring, der an die Funktion übergeben wird. Auch das Steuerzeichen \n wird an die Funktion übergeben.
 
 <details>
 <summary>Beispiel</summary>
@@ -133,7 +133,7 @@ int main()
 
 ## Kommentare
 
-Kommentare dienen dazu ein Programm, für Programmierer, verständlicher zu schreiben. Sie sind ausschließlich für den Menschen da und werden im Maschinencode nicht eingebunden. Beim kompelieren eines Codes entfernt der Compiler jegliche Kommentare, sodass sie im Maschinencode nicht mehr vorhanden sind. Es gibt zwei Arten von Kommentaren: Einzeilige und Mehrzeilige.
+Kommentare dienen dazu ein Programm, für Programmierer, verständlicher zu schreiben. Sie sind ausschließlich für den Menschen da und werden im Maschinencode nicht eingebunden. Beim Kompelieren eines Codes entfernt der Compiler jegliche Kommentare, sodass sie im Maschinencode nicht mehr vorhanden sind. Es gibt zwei Arten von Kommentaren: Einzeilige und Mehrzeilige.
 
 <details>
 <summary>Mehrzeilige Kommentare</summary>
