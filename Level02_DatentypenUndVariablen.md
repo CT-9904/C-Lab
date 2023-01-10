@@ -2,7 +2,7 @@
 
 Datentypen sind für das Erstellen von Variablen und Funktionen von nöten. Bei Variablen geben sie die Speichergröße vor und wie das Bitmuster, das in der Variable gespeichert ist, zu interpretieren ist. Bei Funktionen gibt der Datentyp vor, wie der return-Wert der Funktion, zu interpretieren ist.
 
-Es gibt zwei Arten von Datentypen, nämlich vordefinierte und abgeleitete Datentypen. Bei den vordefinierten Datentypen handelt es sich um die elementaren Typen, sowie dem Typ void. Abgeleitete Datentypen sind z.B. Pointer und Strukturen.
+Es gibt zwei Arten von Datentypen, nämlich vordefinierte und abgeleitete Datentypen. Bei den vordefinierten Datentypen handelt es sich um die elementaren Typen, sowie den Typ void. Abgeleitete Datentypen sind z.B. Pointer und Strukturen.
 
 Auf den Typ void, sowie die abgeleiteten Datentypen, wird zu späteren Zeitpunkten konkreter drauf eingegangen. Folgend werden die elementaren Datentypen genauer erklärt.
 
@@ -26,7 +26,7 @@ Bei den ganzahligen Typen gibt es die "Besonderheit", dass man sie auch unsigned
 
 Bei den Gleitkomma- oder auch Gleitpunkttypen (Floating Types) handelt es sich um die Typen float und double. Auch hier unterscheiden sich die Typen nur in der Speichergröße und den Wertebereichen, die sie abbilden können. Der Typ double ist doppelt so groß, wie ein float.
 
-Beim schreiben eines Codes muss man darauf achten, das man Kommazahlen mit einem Punkt, statt mit einem Komma, schreibt. Das liegt einfach daran, dass die Programmiersprachen aus dem englischsprachigen Raum stammen und man dort Kommazahlen mit einem Punkt schreibt. Deswegen spricht man auch von "floating point numbers".
+Beim Schreiben eines Codes muss man darauf achten, das man Kommazahlen mit einem Punkt, statt mit einem Komma, schreibt. Das liegt einfach daran, dass die Programmiersprachen aus dem englischsprachigen Raum stammen und man dort Kommazahlen mit einem Punkt schreibt. Deswegen spricht man auch von "floating point numbers".
 
 <details>
 <summary>Hinweis</summary>
@@ -66,7 +66,7 @@ Die Daten aus den folgenden Tabellen gelten für ein 32-Bit-Sytem!
 
 # Variablen
 
-Variablen sind, einfach ausgedrückt, eigens gewählte Namen für die Speicheradressen (im Arbeitsspeicher) mit denen ein Computer arbeitet. Speicheradressen sind mit hexadezimalen Zahlen codiert. Um einen Quellcode lseserlicher zu gestalten (und wir Menschen mit hexadezimalen Zahlen wenig Anfangen können) benutzt man Variablen. Variablen besitzen vier Eigenschaften:
+Variablen sind, einfach ausgedrückt, eigens gewählte Namen für die Speicheradressen (im Arbeitsspeicher) mit denen ein Computer arbeitet. Speicheradressen sind mit hexadezimalen Zahlen codiert. Um einen Quellcode leserlicher zu gestalten (und wir Menschen mit hexadezimalen Zahlen wenig anfangen können) benutzt man Variablen. Variablen besitzen vier Eigenschaften:
 
 <details>
 <summary>Name</summary>
@@ -92,7 +92,7 @@ Gibt das Format vor, wie der Wert gespeichert werden soll
 <details>
 <summary>Adresse</summary>
 
-Hexadezimale Zahl, mit dem der Speicherort im codiert ist
+Hexadezimale Zahl, mit dem der Speicherort codiert ist
 
 </details>
 
@@ -167,7 +167,7 @@ Schlüsselwörter sind Bezeichner die von C reserviert sind.
 
 ## Namenskonvention - Benennung von Variablen
 
-Programmier haben Vorschriften bzw. Empfehlungen zur Benennung von Variablen, Funktionen etc. entwickelt. Diese dienen dazu um Programmtexte verständlicher zu gestalten und somit die Möglichkeit der Wartung (Änderbarkeit) der Software zu verbessern. Programmierer sind somit in der Lage Quellcodes anderer Programmier besser nachzuvollziehen. Beim benennen von Variablen wird die Pascal-Notation angewendet. Das bedeutet, dass der erste Buchstabe des Variablennamens groß geschrieben wird und die folgenden Buchstaben klein.
+Programmier haben Vorschriften bzw. Empfehlungen zur Benennung von Variablen, Funktionen etc. entwickelt. Diese dienen dazu um Programmtexte verständlicher zu gestalten und somit die Möglichkeit der Wartung (Änderbarkeit) der Software zu verbessern. Programmierer sind somit in der Lage Quellcodes anderer Programmier besser nachzuvollziehen. Beim Benennen von Variablen wird die Pascal-Notation angewendet. Das bedeutet, dass der erste Buchstabe des Variablennamens groß geschrieben wird und die folgenden Buchstaben klein.
 
 Beispiel:
 
@@ -185,7 +185,7 @@ float GleitkommaZahl;
 long LangeZahl;
 ```
 
-Beim benennen von Funktionen gilt, das die Bezeichnung ein aussagekräftiges Tätigkeitswort sein muss und es klein geschrieben wird.
+Beim Benennen von Funktionen gilt, das die Bezeichnung ein aussagekräftiges Tätigkeitswort sein muss und es klein geschrieben wird.
 
 Beispiel:
 
@@ -216,7 +216,7 @@ Außerdem dürfen gewählte Namen nicht mit einer Zahl beginnen, sondern müssen
 
 ### Deklaration
 
-Unter deklarieren versteht man, dem Compiler den Namen einer Variable bekanntzumachen und diesen mit einem Datentyp zu verknüpfen. Da jeder Variablenname eines Datentyps individuell sein muss, ist der Compiler in der Lage Fehler abzufangen, wenn man versucht zwei Variablen des  gleichen Typs mit dem selben Namen zu deklarieren.
+Unter deklarieren versteht man, dem Compiler den Namen einer Variable bekanntzumachen und diesen mit einem Datentyp zu verknüpfen. Da jeder Variablenname individuell sein muss, ist der Compiler in der Lage Fehler abzufangen, wenn man versucht zwei Variablen dem selben Namen zu deklarieren.
 
 ### Definition
 
@@ -260,7 +260,7 @@ int main()
 
 ## Ausgabe mittels printf-Funktion (Teil 2)
 
-Wie schon am Anfang erwähnt, lassen sich mittels der printf-Anweisung neben Klarschrift und Steuerzeichen auch Formatzeichen ausgeben. Im vorangegangenen Beispiel wurden solche Formatzeichen für die Ausgabe verwendet. Die Formatzeichen dienen dazu die Werte, welche in den Variablen Zahl1 und Zahl2 sind, über printf ausgegeben.
+Wie schon am Anfang erwähnt, lassen sich mittels der printf-Anweisung, neben Klarschrift und Steuerzeichen, auch Formatzeichen ausgeben. Im vorangegangenen Beispiel wurden solche Formatzeichen für die Ausgabe verwendet. Die Formatzeichen dienen dazu die Werte, welche in den Variablen Zahl1 und Zahl2 sind, über printf ausgegeben.
 
 Die printf-Funktion in ihrer vollständigen Form sieht wie folgt aus:
 
@@ -268,4 +268,4 @@ Die printf-Funktion in ihrer vollständigen Form sieht wie folgt aus:
 printf("Wert von Int-Variable: %d\n", Zahl1);
 ```
 
-Über eine Formatanweisung lassen sich die Werte/Variablen in der Variablenliste auswerten. Wichtig ist, dass das Ende des Formatstring und die erste Variable, in der Variablenliste durch ein Komma getrennt sind. Will man mehrere Variablen über eine printf-Anweisung ausgeben, müssen diese auch mit einem Komma dazwischen getrennt werden und sie müssen in der Reihenfolge stehen, wie sie verarbeitet werden sollen!
+Über eine Formatanweisung lassen sich die Werte/Variablen in der Variablenliste auswerten. Wichtig ist, dass das Ende des Formatstring und die erste Variable, in der Variablenliste, durch ein Komma getrennt sind. Will man mehrere Variablen über eine printf-Anweisung ausgeben, müssen diese auch mit einem Komma dazwischen getrennt werden und sie müssen in der Reihenfolge stehen, wie sie verarbeitet werden sollen!
