@@ -31,7 +31,7 @@ Syntax einer Funktion:
 }
 ```
 
-Der Funktionskopf besteht aus vier wesentlichen Bestandteilen nämlich aus einem Datentypen, einem Funktionsnamen, einem runden Klammernpaar einem oder mehreren Parametern innerhalb des runden Klammernpaares. Auf die geschlossene Klammer folgt der Funktionskörper.
+Der Funktionskopf besteht aus vier wesentlichen Bestandteilen nämlich aus einem Datentypen, einem Funktionsnamen, einem runden Klammernpaar und, einem oder mehreren, Parametern innerhalb des runden Klammernpaares. Auf die geschlossene Klammer folgt der Funktionskörper.
 
 ## Rückgabe einer Funktion
 
@@ -91,7 +91,7 @@ Im Gegensatz zur int-main-Funktion gibt die void-main-Funktion in keinsterweise 
 
 ## Beispiel zur Anwendung von Funktion
 
-Im folgenden werden zwei Int-Zahlen miteinander addiert. Die Addition wirs in eine Funktion ausgelagert. Dieses einfache Beispiel soll die praktische Anwendung von Funktionen verdeutlichen.
+Im folgenden werden zwei Int-Zahlen miteinander addiert. Die Addition wird in eine Funktion ausgelagert. Dieses einfache Beispiel soll die praktische Anwendung von Funktionen verdeutlichen.
 
 ```c
 #include <stdio.h>
@@ -154,12 +154,46 @@ int addiereIntZahlen(int Zahl1, int Zahl2)
 <details>
 <summary>Hinweis</summary>
 
-Die Syntax gibt vor, dass Deklarationen von Funktionen mit einem Semikolon abgeschlossen werden müssen. Wenn man jedoch eine Funktion auch überhalb der main-Funktion definiert, symbolisiert die schließende geschweifte Klammer (}) das Ende.
+Die Syntax gibt vor, dass Deklarationen von Funktionen mit einem Semikolon abgeschlossen werden müssen. Wenn man jedoch eine Funktion auch überhalb der main-Funktion definiert, symbolisiert die schließende geschweifte Klammer ( } ) das Ende.
 
 </details>
 
 Über der main-Funktion wird die Funktion addiereIntZahlen deklariert. Die Deklaration einer Funktion besteht nur aus dem Funktionskopf.
 
-Unter der main Funktion wird die Funktion definiert. Die Funktion ist vom Datentyp int und wie schon in der Deklaration "bekanntgemacht" hat sie die Bezeichnung addiereIntZahlen und die an sie übergebenen Parameter sind int Zahl1 und int Zahl2. Mit den beiden Parametern wird innerhalb des Funktionskörpers (Anweisungsblock der Funktion) gearbeitet. Im Funktionskörper ist die Variable int Ergebnis definiert. Die Initialisierung dieser Variable besteht aus der Rechnung Zahl1 + Zahl2. Am Ende der Funktion wird mittels return-Anweisung der Wert von der Variable Ergebnis an die aufrufende Funktion (in diesem Fall die main-Funktion) zurückgeben. Der zurückgegebene Wert ist vom Typ int.
+Unter der main Funktion wird die Funktion definiert. Die Funktion ist vom Datentyp int und wie schon in der Deklaration "bekanntgemacht", hat sie die Bezeichnung addiereIntZahlen und die an sie übergebenen Parameter sind int Zahl1 und int Zahl2. Mit den beiden Parametern wird innerhalb des Funktionskörpers (Anweisungsblock der Funktion) gearbeitet. Im Funktionskörper ist die Variable int Ergebnis definiert. Die Initialisierung dieser Variable besteht aus der Rechnung Zahl1 + Zahl2. Am Ende der Funktion wird mittels return-Anweisung der Wert von der Variable Ergebnis an die aufrufende Funktion (in diesem Fall die main-Funktion) zurückgeben. Der zurückgegebene Wert ist vom Typ int.
 
-Innerhalb der Funktion werden erstmal die beiden Variablen Wert1 und Wert2 erstellt. Wert1 wird mit 42 und Wert2 mit 33 initialisiert. Beide Variablen sind vom Typ Integer. Als nächstes wird die Variable Summe erstellt. Auch sie ist vom Typ Integer. Statt jedoch die Variable mit einem Wert zu initialisieren oder eine Rechnung durchzuführen, wird hinter dem Zuweisungsoperator die Funktion addiereIntZahlen aufgerufen.
+Innerhalb der main-Funktion werden erstmal die beiden Variablen Wert1 und Wert2 erstellt. Wert1 wird mit 42 und Wert2 mit 33 initialisiert. Beide Variablen sind vom Typ Integer. Als nächstes wird die Variable Summe erstellt. Auch sie ist vom Typ Integer. Statt jedoch die Variable mit einem Wert zu initialisieren oder eine Rechnung durchzuführen, wird hinter dem Zuweisungsoperator die Funktion addiereIntZahlen aufgerufen.
+
+Im Funktionsaufruf werden dann Wert1 und Wert2 als Argumente hinterlegt. Die beiden Variablen werden also den Funktionsparametern Zahl1 und Zahl2 zugewiesen, damit die Funktion mit den beiden Werten den, in ihr definierten, Algorithmus abarbeiten kann. Das Ergebnis, was dann mittels der return-Anweisung, zurückgeben wird, wird in der Variable Summe hinterlegt. Die Variable Summe wird also mit dem return-Wert der Funktion addiereIntZahlen initialisiert.
+
+## Unterschied zwischen Parametern und Argumenten bei Funktionen
+
+Parameter und Funktionen sind **nicht** ein und dasselbe. Das wird häufig gerne verwechselt.
+
+Parameter werden beim Erstellen einer Funktion miterstellt. Sie dienen dazu Argumente zu empfangen und sind auch nur innerhalb der Funktion gültig. Beim Aufruf einer Funktion wird ihnen also der Wert des Arguments zugewiesen.
+
+Argumente sind die konkreten Werte, die an die Funktion übergeben werden. Diese Werte werden dann innerhalb der Funktion den Parametern zugewiesen, damit Diese die Werte verarbeiten kann.
+
+Zur Verdeutlichung zwischen Parametern und Argumenten ist hier nochmal ein einfaches Beispiel:
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+// Deklaration und Definition
+void ausgebenErklaerung(int Parameter)
+{
+    printf("Die Zahl des Arguments, die beim Funktionsaufruf, innerhalb der main-Funktion, hinterlegt wurde lautet %d.\n", Parameter);
+    printf("Der Variable Parameter, die innerhalb der Funktion ausgebenErklaerung gueltig ist, wird der Wert des Arguments zugewiesen.\n");
+}
+
+// main-Funktion
+int main()
+{
+    int Argument = 21;
+
+    ausgebenErklaerung(Argument);
+
+    return 0;
+}
+```

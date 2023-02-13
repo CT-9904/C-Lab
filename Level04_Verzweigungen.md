@@ -1,6 +1,6 @@
 # Verzweigungen
 
-Bei Verzweigungen handelt es sich um eine Form von Kontrollstrukturen in Programmiersprachen. Verzweigungen werden genutzt um den Programmablauf so zu steuern, dass es je
+Bei Verzweigungen handelt es sich um eine Form von Kontrollstrukturen in Programmiersprachen. Verzweigungen werden genutzt um den Programmablauf so zu steuern, dass er, je
 nach Input, ein anderes Verhalten hat. Eines der gängigsten Fälle sind User-Eingaben. So gut wie jedes Programm und jede App sind so aufgebaut, dass sie dem User die
 Möglichkeit bieten zu entscheiden, welchen Output er von der jeweiligen Anwendung haben möchte.
 
@@ -101,10 +101,8 @@ An diesem einfachen Beispiel sieht man den grundlegenden Ablauf einer if-else-Ve
 
 Das Beispiel macht auch deutlich, dass solche Strukturen einer binären Logik folgen. Lässt man den else-Block nämlich weg, wird das Programm zwar auch korrekt ausgeführt. Allerdings bekommt der User nur eine Rückmeldung, wenn er die richtige Antwort eingegeben hat. Bei einer Eingabe die falsch ist, erhält er keine Auskunft darüber, ob seine Antwort stimmt oder nicht.
 
-<span style="color:red">
 Deswegen gilt:
 Will man bei einem bestimmten Ereignis, eine entsprechende Reaktion des Programms darauf haben, muss diese vorher im Quellcode definiert sein.
-</span>
 
 </details>
 
@@ -262,7 +260,7 @@ switch (Ausdruck)
 Aufbau des case-Blocks:
 
 Der case-Block wird mit dem Schlüsselwort case eingeleitet. Auf das Schlüsselwort folgt ein Wert, der mit dem Ausdruck in Klammern des switch-Blocks, verglichen wird.
-Die Syntax gibt vor, das hinter dem Wert ein Doppelpunkt (:) stehen muss. Auf deiesen Dopplepunkt folgt der Anweisungsblock. Hier stehen die Anweisungen, die beim
+Die Syntax gibt vor, das hinter dem Wert ein Doppelpunkt ( : ) stehen muss. Auf diesen Dopplepunkt folgt der Anweisungsblock. Hier stehen die Anweisungen, die beim
 eintreffen des Falles, ausgeführt werden sollen.
 
 <details>
@@ -285,7 +283,7 @@ Sowohl der Ausdruck im switch-Block, als auch der Wert des case-Blocks, müssen 
 
 Aufbau des default-Blocks:
 Der default-Block wird mit dem Schlüsselwort eingeleitet. Wie auch der else-Block keine Bedingungen hat, hat auch der default-Block keinen Wert, der mit dem Ausdruck
-aus dem switch-Block verglichen werden kann. Auf das Schlüsselwort der Doppelpunkt. Dahinter kommt der Anweisungsblock.
+aus dem switch-Block verglichen werden kann. Auf das Schlüsselwort folgt der Doppelpunkt. Dahinter kommt der Anweisungsblock.
 
 <details>
   

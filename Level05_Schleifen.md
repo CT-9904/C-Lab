@@ -6,11 +6,11 @@ In C gibt es drei verschiedene Schleifen: die for-Schleife, die while-Schleife u
 
 Was alle drei Schleifen-Typen gemeinsam haben ist, dass sie eine Durchlauf-Bedingung besitzen. Eine Durchlauf-Bedingung ist eine Bedingung, die vor jedem neuen Schleifendurchlauf geprüft wird. Solange die Bedingung erfüllt ist, wird die Schleife wiederholt. Ist sie nicht bzw. nicht mehr erfüllt, wird die Schleife verlassen oder, unter entsprechenden Umständen, gar nicht erst ausgeführt.
 
-## Kopfgesteuerte und fußsgesteurte Schleifen
+## Kopfgesteuerte und fußgesteurte Schleifen
 
 Man unterscheidet zwischen zwei Arten von Schleifen, nämlich kopfgesteuerten und fußgesteuerten Schleifen. Der Unterschied zwischen den zwei Arten ist einfach erklärt.
 
-Bei den kopfgesteuerten Schleifen wird die Durchlauf-Bedingung immer vor einem Durchlauf geprüft. Sie steht über dem Anweisungsblock, also am Kopf der Schleife. Diefor-Schleife und die while-Schleife sind beides kopfgesteuerte Schleifen.
+Bei den kopfgesteuerten Schleifen wird die Durchlauf-Bedingung immer vor einem Durchlauf geprüft. Sie steht über dem Anweisungsblock, also am Kopf der Schleife. Die for-Schleife und die while-Schleife sind beides kopfgesteuerte Schleifen.
 
 Bei fußgesteuerten Schleifen wird die Durchlauf-Bedingung ganz zum Schluss geprüft (nach dem Durchlauf). Sie steht unter dem Anweisungsblock, als am Fuß der Schleife. Die do-while-Schleife ist eine fußgesteuerte Schleife.
 
@@ -43,7 +43,7 @@ Die Durchlauf-Bedingung (Bereich 2) wird vor jedem Schleifendurchlauf geprüft. 
 <details>
 <summary>Bereich 3: Operation (Reinitialsierung)</summary>
 
-Die Operation (Bereich 3) dient dazu, die Zählvaraible der Start-Bedingung zu erhöhen / verringern. Meistens wird eine Inkrementierung um den Wert 1 gewählt. Die Operation wird immer am Ende eines Schleifendurchlaufs ausgeführt.
+Die Operation (Bereich 3) dient dazu, die Zählvariable der Start-Bedingung zu erhöhen / verringern. Meistens wird eine Inkrementierung um den Wert 1 gewählt. Die Operation wird immer am Ende eines Schleifendurchlaufs ausgeführt.
 </details>
 
 Die einzelnen Bereiche sind jeweils durch ein Semikolon voneinander getrennt. Auf das runde Klammernpaar folgt der Anweisungsblock.
@@ -124,7 +124,7 @@ In dem Beispiel sieht man eine while-Schleife die fünf Durchläuf ausführt und
 
 Die Hilfvariablen cycle und i stehen außerhalb der Schleife. Würde man sie innerhalb der Schleife initialisieren, würden beide Variablen bei jedem Schleifendurchlauf auf 0 gesetzt werden. Zufolge hätte das, dass auf der Konsole permanent "1. Durchlauf" ausgegeben wird, da es zu keiner Abbruch-Bedingung kommt. Die Variable cycle speichert, auch hier, die Nummer des aktuellen Schleifendurchlaufs.
 
-Die Variable i dient als Zählvariable für diie Abbruch-Bedingung. Sie ist eine Komponente Dieser. Der andere Teil der Abbruch-Bedingung ist der Ausdruck im runden Klammernpaar der while-Schleife. Innerhalb der Schleife wird i mit jedem Durchlauf inkrementiert. Beträgt der der Wert von i 5, ist der Ausdruck nicht mehr erfüllt und die Schleife wird verlassen.
+Die Variable i dient als Zählvariable für die Abbruch-Bedingung. Sie ist eine Komponente Dieser. Der andere Teil der Abbruch-Bedingung ist der Ausdruck im runden Klammernpaar der while-Schleife. Innerhalb der Schleife wird i mit jedem Durchlauf inkrementiert. Beträgt der Wert von i 5, ist der Ausdruck nicht mehr erfüllt und die Schleife wird verlassen.
 
 Das Beispiel zeigt nur eine Möglichkeit einer Abbruch-Bedingung bei einer while-Schleife. Je nach Anwendungsfall kann (muss) man die Abbruch-Bedingung auch anders realisieren.
 
@@ -140,7 +140,7 @@ do{
 }while(Ausdruck);
 ```
 
-Eingeleitet wird die Schleife mit dem Schlüsselwort do. Auf das Schlüsselwort folgt der Anweisungsblock. Hinter der schließenden Klammer des Anweisungsblock steht das Schlüsselwort while mit dem runen Klammernpaar, wo dirn der Ausdruck enthalten ist (so wie man es auch von der while-Schleife gewohnt ist). Eine Besonderheit der do-while-Schleife (und  gleichzeitig auch eine der häufigsten Fehlerquellen, wenn man sie benutzt) ist das Semikolon, hinter dem runden Klammernpaar des Ausdrucks. Eine do-while-Schleife muss mit einem Semikolon abgeschlossen werden. Dies gibt die Syntax vor!
+Eingeleitet wird die Schleife mit dem Schlüsselwort do. Auf das Schlüsselwort folgt der Anweisungsblock. Hinter der schließenden Klammer des Anweisungsblock steht das Schlüsselwort while mit dem runden Klammernpaar, wo drin der Ausdruck enthalten ist (so wie man es auch von der while-Schleife gewohnt ist). Eine Besonderheit der do-while-Schleife (und  gleichzeitig auch eine der häufigsten Fehlerquellen, wenn man sie benutzt) ist das Semikolon, hinter dem runden Klammernpaar des Ausdrucks. Eine do-while-Schleife muss mit einem Semikolon abgeschlossen werden. Dies gibt die Syntax vor!
 
 <details>
 <summary>Beispiel</summary>
@@ -165,7 +165,7 @@ int main()
 }
 ```
 
-Zu sehen ist im Beispiel eine do-while-Schleife, die fünf Durchläufe ausgeführt und ihren aktuellen Schleifendurchlauf, mittels printf-Anweisung, auf der Konsole ausgibt.
+Zu sehen ist im Beispiel eine do-while-Schleife, die fünf Durchläufe ausführt und ihren aktuellen Schleifendurchlauf, mittels printf-Anweisung, auf der Konsole ausgibt.
 
 Bis auf die Tatsache, dass sie definitiv mindestens einmal ausgeführt wird, ist die Logik der do-while-Schleife identisch mit der, der while-Schleife.
 
@@ -175,11 +175,11 @@ Bis auf die Tatsache, dass sie definitiv mindestens einmal ausgeführt wird, ist
 
 Wie man erkennen konnte, haben die Programme der drei vorangegangenen Beispiele alle zur identisch gleichen Ausgabe geführt, obwohl drei unterschiedliche Arten von Schleifen genutzt wurden. Das liegt daran, dass man jede Schleife in eine Andere umwandeln kann.
 
-Gängige Praxis ist es aber, aber dass man bei einer bekannten und/oder fest vorgeschriebenen Anzahl an Iterationenen die for-Schleife verwendet und bei einer unbekannten bzw. variablen Anzahl an Iterationen die while-Schleife nutzt. Ist die Anwendung einer while-Schleife nötig, man jedoch sicher stellen möchte das sie mindestens einmal ausgeführt wird, bentutzt man die do-while-Schleife.
+Gängige Praxis ist es aber, aber dass man bei einer bekannten und/oder fest vorgeschriebenen Anzahl an Iterationenen die for-Schleife verwendet und bei einer unbekannten bzw. variablen Anzahl an Iterationen die while-Schleife nutzt. Ist die Anwendung einer while-Schleife nötig, man jedoch sicher stellen möchte das sie mindestens einmal ausgeführt wird, benutzt man die do-while-Schleife.
 
 ## Endlosschleifen
 
-Eine Nutzungsmöglichkeit von Schleifen, bei deren Nutzung man bedacht vorgehen sollte, sind Endlosschleifen. Aus Versehen kann man Endlosschleifen schneller programmieren, als man denkt. Der häufigste Fehler ist, dass man eine Abbruch-Bedingung definiert, die erfüllt wird. Im schlimmsten Fall kann dann das Programm die Hardware zum Abstürzen bringen.
+Eine Nutzungsmöglichkeit von Schleifen, bei deren Nutzung man bedacht vorgehen sollte, sind Endlosschleifen. Aus Versehen kann man Endlosschleifen schneller programmieren, als man denkt. Der häufigste Fehler ist, dass man eine Abbruch-Bedingung definiert, die nicht erfüllt wird. Im schlimmsten Fall kann dann das Programm die Hardware zum Abstürzen bringen.
 
 Endlosschleifen werden jedoch auch ganz bewusst angewendet z.B. Serveranwendungen.
 Möchte man eine Endlosschleife programmieren, so sollte man sie wohlbedacht konstruieren. Außerdem sollte man eine Abbruch-Bedingumng definieren, die bei Fehlverhalten der Schleife ausgelöst wird!

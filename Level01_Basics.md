@@ -46,13 +46,13 @@ Die return-Anweisung beendet die Funktion. Steht am Ende der main-Funktion "retu
 
 ## Die Bedeutung der geschweiften Klammern
 
-Geschweifte Klammern ("{" und "}") bilden einen Anweisungsblock. In einem Anweisungsblock werden mehrere Anweisungen zu einer Einheit zusammengefasst. Die Anweisungen in einem Anweisungsblock werden von oben nach unten abgearbeitet.
+Geschweifte Klammern ( { und } ) bilden einen Anweisungsblock. In einem Anweisungsblock werden mehrere Anweisungen zu einer Einheit zusammengefasst. Die Anweisungen in einem Anweisungsblock werden von oben nach unten abgearbeitet.
 
 Regel Nr.1: Geschweifte Klammern dienen dazu mehrere Anweisungen zu einem Anweisungsblock zusammenzufassen.
 
 ## Die Bedeutung des Semikolons
 
-Das Semikolon (";") ist eines der wichtigsten Zeichen, wenn nicht sogar das wichtigste Zeichen, in C. Am Ende jeder Anweisung muss ein Semikolon stehen! Das Semikolon zeigt das Ende einer Anweisung an, genau so wie ein Punkt einen Satz beendet.
+Das Semikolon ( ; ) ist eines der wichtigsten Zeichen, wenn nicht sogar das wichtigste Zeichen, in C. Am Ende jeder Anweisung muss ein Semikolon stehen! Das Semikolon zeigt das Ende einer Anweisung an, genau so wie ein Punkt einen Satz beendet.
 
 Regel Nr. 2: Jede Anweisung muss mit einem Semikolon abgeschlossen werden.
 
@@ -110,7 +110,7 @@ printf ist in der Headerdatei stdio.h deklariert.
 printf("Hallo Welt\n");
 ```
 
-printf ist eine Funktion, die aus mehreren Teilen besteht. Im Verlauf der Zusammenfassung wird auf alle Teile eingegangen. Zum jetzigen Zeitpunkt reicht es zu wissen, dass der Text der, über die Standardausgabe, ausgegeben werden soll zwischen zwei Anführungszeichen (") steht.
+printf ist eine Funktion, die aus mehreren Teilen besteht. Im Verlauf der Zusammenfassung wird auf alle Teile eingegangen. Zum jetzigen Zeitpunkt reicht es zu wissen, dass der Text der, über die Standardausgabe, ausgegeben werden soll zwischen zwei Anführungszeichen ( " ) steht.
 
 Die obige Codezeile zeigt eine aufgerufene printf-Anweisung. printf ist der Funktionsaufruf. Das was in den runden Klammern und zwischen den Anführungszeichen steht, ist der Formatstring, der an die Funktion übergeben wird. Auch das Steuerzeichen \n wird an die Funktion übergeben.
 

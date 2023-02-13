@@ -35,7 +35,7 @@ Die Speichergröße der Typen ist in C, im Vergleich zu anderen Programmiersprac
 
 </details>
 
-### Üblicke der Datentypen
+### Überblick der Datentypen
 
 Die Daten aus den folgenden Tabellen gelten für ein 32-Bit-Sytem!
 
@@ -106,7 +106,7 @@ Konstanten sind Variablen mit festem Wert. Im Gegensatz zu Variablen können die
 
 Variablen: Werte können im Laufe des Programms verändert werden.
 
-Konstanten: Werte sind fest zugewiesen und können im nachhinein nicht mehr verändert werden.
+Konstanten: Werte sind fest zugewiesen und können im Nachhinein nicht mehr verändert werden.
 
 <details>
 <summary>Hinweis</summary>

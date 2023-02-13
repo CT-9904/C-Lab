@@ -3,7 +3,7 @@
 <details>
 <summary>Operatoren</summary>
 
-In C erfolgt die Programmausführung mittels Operatoren. Operatoren werden dazu genutzt, die Bestandteile ein einem Programmcode miteinander zu verknüpfen. Am Bekanntesten ist der Zuweisungsoperator (=). Darüber hinaus gibt es noch die Arithmetischen, Logischen, Bit-Operatoren, sowie die Vergleichsoperatoren.
+In C erfolgt die Programmausführung mittels Operatoren. Operatoren werden dazu genutzt, die Bestandteile in einem Programmcode miteinander zu verknüpfen. Am Bekanntesten ist der Zuweisungsoperator ( = ). Darüber hinaus gibt es noch die arithmetischen und logischen Operatoren, die Bit-Operatoren, sowie die Vergleichsoperatoren.
 
 </details>
 
@@ -12,7 +12,7 @@ In C erfolgt die Programmausführung mittels Operatoren. Operatoren werden dazu 
 
 Als Operanden werden die Einheiten bezeichnet, die durch Operatoren bearbeitet (ausgelesen oder verändert) werden. Operanden sind nichts anderes als Variablen und Konstanten.
 
-DIe Verkettung von Operanden und Operatoren bezeichnet man als Ausdruck. Jeder Ausdruck generiert einen Rückgabewert, der an den Aufruf zurückgegeben wird.
+Die Verkettung von Operanden und Operatoren bezeichnet man als Ausdruck. Jeder Ausdruck generiert einen Rückgabewert, der an den Aufruf zurückgegeben wird.
 
 </details>
 
@@ -39,11 +39,11 @@ int main()
 
 ## Die arithmetischen Operatoren
 
-Die arithmetischen Operatoren sind aus der Mathematik bekannt.Es handelt sich um Plus (+), Minus (-), Mal (*), Geteilt (/) und Modulo (%).
+Die arithmetischen Operatoren sind aus der Mathematik bekannt.Es handelt sich um Plus ( + ), Minus ( - ), Mal ( * ), Geteilt ( / ) und Modulo ( % ).
 
 Mit Ausnahme des Modulo-Operators, dürfen die arithmetischen Operatoren sowohl bei Ganzzahligen als auch bei Gleitkommatypen benutzt werden. Modulo hingegen darf nur bei ganzzahligen Typen verwendet werden.
 
-Wie  auch in Mathe gilt die Punkt-vor-Strich-Regel, wenn man mehrere Operatoren gleichzeitig verwendet. Will man dies vermeiden, sollte man Klammern (()) verwenden. Der Klammer-Operator ist der Operator mit der höchsten Priorität.
+Wie auch in der Mathematik gilt die Punkt-vor-Strich-Regel, wenn man mehrere Operatoren gleichzeitig verwendet. Will man dies vermeiden, sollte man Klammern verwenden. Der Klammer-Operator ist der Operator mit der höchsten Priorität.
 
 <details>
 <summary>Bedeutung von Modulo</summary>
@@ -98,9 +98,9 @@ int main()
 
 ## Inkrementieren und Dekrementieren
 
-Wenn man einen Wert um eins erhöhen oder verringern möchte, bietet sich eine Inkrementierung (Erhöhung um eins) bzw.eine Dekrementierung (Verringerung um eins) an. Sowohl der Inkrement-Operator (++) als auch der Dekrement-Operator (--) können sowohl vor, als auch naach einer Variable stehen. Man spricht dann Postfix bzw. Präfix.
+Wenn man einen Wert um eins erhöhen oder verringern möchte, bietet sich eine Inkrementierung (Erhöhung um eins) bzw. eine Dekrementierung (Verringerung um eins) an. Sowohl der Inkrement-Operator ( ++ ) als auch der Dekrement-Operator ( -- ) können sowohl vor, als auch nach einer Variable stehen. Man spricht dann Postfix bzw. Präfix.
 
-Bedeutung Inkrement-Operator:
+Bedeutung des Inkrement-Operators:
 
 ```c
 Variable++;
@@ -108,7 +108,7 @@ Variable++;
 Variable = Variable + 1; 
 ```
 
-Bedeutung Dekrement-Operator:
+Bedeutung des Dekrement-Operators:
 
 ```c
 Variable--;
@@ -160,7 +160,7 @@ int main()
 
 ## Vergleichsoperatoren
 
-Die Vergleichsoperatoren sollten ebenfalls aus der Mathematik bekannt vorkommen. Wie der Name schon aussag, dienen sie dazu Vergleiche durchzuführen. Es werden immer zwei Operanden miteinander verglichen zurückgegeben wird ein Wert des Typs int. Ist der Vergleich wahr, erhält man den Wert 1 (true)  zurück. Bei einem Vergleich der unwahr ist, erhält man den Wert 0 (false) zurück.
+Die Vergleichsoperatoren sollten ebenfalls aus der Mathematik bekannt vorkommen. Wie der Name schon aussagt, dienen sie dazu Vergleiche durchzuführen. Es werden immer zwei Operanden miteinander verglichen. Zurückgegeben wird ein Wert des Typs int. Ist der Vergleich wahr, erhält man den Wert 1 (true) zurück. Bei einem Vergleich der unwahr ist, erhält man den Wert 0 (false) zurück.
 
 In der folgenden Tabelle sind alle Vergleichsoperatoren und ihre Bedeutungen zusammengefasst.
 
@@ -185,7 +185,7 @@ int main()
     int x = 9;
     int y = 5;
 
-    _Bool Vergleich;
+    int Vergleich;
 
     // x ist gleich y
     Vergleich = x == y;
@@ -219,7 +219,7 @@ int main()
 
 ## Der Fehler zwischen Vergleich und Zuweisung
 
-Ein beliebter Fehler ist, dass man den Zuweisungsoperator (=) und den Gleich-Vergleichsoperator (==) miteinander verwechselt. Folgendes Beispiel dient dazu, um den Unterschied ganz explizit zu verdeutlichen:
+Ein beliebter Fehler ist, dass man den Zuweisungsoperator ( = ) und den Gleich-Vergleichsoperator ( == ) miteinander verwechselt. Folgendes Beispiel dient dazu, um den Unterschied ganz explizit zu verdeutlichen:
 
 ```c
 #include <stdio.h>
@@ -230,7 +230,7 @@ int main()
     int x = 9; //x wird der Wert 9 zugewiesen
     int y = 5; //y wird der Wert 5 zugewiesen
 
-    _Bool Vergleich;
+    int Vergleich;
     Vergleich = (x == y);
     /*
     Innerhalb der Klammer findet ein Vergleich zwischen den Variablen
@@ -244,14 +244,14 @@ int main()
 
 ## Mathematische Operationen
 
-Mit den bisherigen Operatoren lassen sich einfache Berechnungen realisieren. Will man bestimmte mathematische Berechnungen, wie z.B. Wurzel ziehen, Trigonometrie oder Berechnungen mit komplexen Zahlen durchführen, so ist das einbinden vo zusätzlichen Headerdateien erforderlich, nämlich math.h und complex.h.
+Mit den bisherigen Operatoren lassen sich einfache Berechnungen realisieren. Will man bestimmte mathematische Berechnungen, wie z.B. Wurzel ziehen, Trigonometrie oder Berechnungen mit komplexen Zahlen durchführen, so ist das einbinden von zusätzlichen Headerdateien erforderlich, nämlich math.h und complex.h.
 
 Alternativ kann man auch die Headerdatei tgmath.h benutzen. In tgmath.h sind die beiden Headerdateien math.h und complex.h enthalten. Hinzukommt das die Makros in ihr typengenerisch definiert sind.
 
 <details>
 <summary>Bedeutung von typengenerisch</summary>
 
-Typengenerisch bedeutet, dass etwas nicht ans Typ-System gebunden ist. Konkret auf den Fall der Makros aus "tgmath.h" bezogen, bedeutet das, das man sie mit Variablen der Typen char, short, int, long, float und double nutzen kann.
+Typengenerisch bedeutet, dass etwas nicht ans Typ-System gebunden ist. Konkret auf den Fall der Makros aus "tgmath.h" bezogen, bedeutet das, dass man sie mit Variablen der Typen char, short, int, long, float und double nutzen kann.
 
 </details>
 
@@ -259,7 +259,7 @@ Typengenerisch bedeutet, dass etwas nicht ans Typ-System gebunden ist. Konkret a
 
 Bei den logischen Operatoren handelt es sich um die UND- und ODER-Verknüpfung, sowie die Negation. Diese sollten aus den Grundlagen der Informatik bekannt sein.
 
-In den folgenden Tabelle sind die logischen Operatoren, sowie deren Bedeutungen, zusammengefasst.
+In der folgenden Tabelle sind die logischen Operatoren, sowie deren Bedeutungen, zusammengefasst.
 
 | Operator | Bedeutung | Beispiel |
 |----------|-----------|----------|
@@ -333,7 +333,7 @@ Bit-Operatoren sind nur auf ganzzahlige Typen anwendbar!
 
 Im Gegensatz zu logischen Operatoren verknüpfen Bit-Operatoren die Werte nicht in der Form, wie sie übergeben wurden, sondern bitweise.
 
-Eine UND-Verknüpfung aus 5 und 7 also nicht "wahr" als Ergebnis, sondern sieht wie folgt aus:
+Eine UND-Verknüpfung aus 5 und 7 gibt also nicht "wahr" als Ergebnis zurück, sondern sieht wie folgt aus:
 
 | Dezimal | Binär |
 |---------|-------|
@@ -412,7 +412,7 @@ Auch scanf ist in der Headerdatei stdio.h deklariert.
 
 ### Aufbau von scanf
 
-Der Aufbau von scanf ist dem von printf sehr ähnlich. Das Funktionszeichen, vom Datentyp der eingelesen werden soll, steht zwischen zwei Anführungszeichen ("). Der Formatstring und die Variablenliste sind auch hier mit einem Komma getrennt. Bei den Variablen in der Variablenliste muss vor dem Variablennamen ein & gesetzt werden. Das ist ganz wichtig, da man ansonsten einen Fehler bekommt.
+Der Aufbau von scanf ist dem von printf sehr ähnlich. Das Funktionszeichen, vom Datentyp der eingelesen werden soll, steht zwischen zwei Anführungszeichen ( " ). Der Formatstring und die Variablenliste sind auch hier mit einem Komma getrennt. Bei den Variablen in der Variablenliste muss vor dem Variablennamen ein & gesetzt werden. Das ist ganz wichtig, da man ansonsten einen Fehler bekommt.
 
 ```c
 scanf("%d", &Variable);
@@ -481,7 +481,7 @@ Das Ergebnis von einer sizeof-Operation ist vom Typ size_t. size_t ist nichst an
 
 ## Typumwandlung
 
-In einigen Fällen wird es sich nicht vermeiden lassen, dass man Werte von verschiedenen Datentypen miteinander verrechnen muss. Dafür muss man eine Typumwandlung vollziehen. Bekannter ist der Begriff TypeCasting für dieses Verfahren. Beim TypeCasting wandelt man einen Datentyp in einen anderen Datentyp um. Man unterscheidet zwischen impliziten und explizitem TypeCasting.
+In einigen Fällen wird es sich nicht vermeiden lassen, dass man Werte von verschiedenen Datentypen miteinander verrechnen muss. Dafür muss man eine Typumwandlung vollziehen. Bekannter ist der Begriff TypeCasting für dieses Verfahren. Beim TypeCasting wandelt man einen Datentyp in einen anderen Datentyp um. Man unterscheidet zwischen implizitem und explizitem TypeCasting.
 
 ### Implizites TypeCasting
 
@@ -548,7 +548,7 @@ In den folgenden Tabellen sind die gezeigten Operatoren ihrer Priorität nach ge
 | ++(Präfix) / --(Präfix) | Wert um 1 erhöhen bzw. verringern vor Auswertung | Links nach Rechts |
 | ! | logisches NICHT | Links nach Rechts |
 | ~ | Einerkomplement | Links nach Rechts |
-| +(Vorzeichen) / -(Vorzeichen) | Plus und Minus als Vorzeichen | Links nach Rechts |
+| + (Vorzeichen) / - (Vorzeichen) | Plus und Minus als Vorzeichen | Links nach Rechts |
 | & | Adressoperator | Links nach Rechts |
 | sizeof | sizeof-Operator | Links nach Rechts |
 | (Datentyp) | Cast-Operator | Links nach Rechts |
